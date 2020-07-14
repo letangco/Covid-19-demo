@@ -1,0 +1,1822 @@
+[
+ {
+   "id": 1,
+   "countryitems": 1,
+   "countryitemstitle": "Afghanistan",
+   "code": "AF",
+   "total_cases": 23546,
+   "total_deaths": 446,
+   "total_new_cases_today": 656,
+   "total_new_deaths_today": 20
+ },
+ {
+   "id": 2,
+   "countryitems": 2,
+   "countryitemstitle": "Albania",
+   "code": "AL",
+   "total_cases": 1416,
+   "total_deaths": 36,
+   "total_new_cases_today": 31,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 3,
+   "countryitems": 3,
+   "countryitemstitle": "Algeria",
+   "code": "DZ",
+   "total_cases": 10589,
+   "total_deaths": 741,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 4,
+   "countryitems": 4,
+   "countryitemstitle": "Angola",
+   "code": "AO",
+   "total_cases": 118,
+   "total_deaths": 5,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 5,
+   "countryitems": 5,
+   "countryitemstitle": "Argentina",
+   "code": "AR",
+   "total_cases": 27373,
+   "total_deaths": 772,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 7
+ },
+ {
+   "id": 6,
+   "countryitems": 6,
+   "countryitemstitle": "Armenia",
+   "code": "AM",
+   "total_cases": 15281,
+   "total_deaths": 258,
+   "total_new_cases_today": 612,
+   "total_new_deaths_today": 13
+ },
+ {
+   "id": 7,
+   "countryitems": 7,
+   "countryitemstitle": "Australia",
+   "code": "AU",
+   "total_cases": 7290,
+   "total_deaths": 102,
+   "total_new_cases_today": 5,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 8,
+   "countryitems": 8,
+   "countryitemstitle": "Austria",
+   "code": "AT",
+   "total_cases": 17064,
+   "total_deaths": 675,
+   "total_new_cases_today": 30,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 9,
+   "countryitems": 9,
+   "countryitemstitle": "Azerbaijan",
+   "code": "AZ",
+   "total_cases": 9218,
+   "total_deaths": 113,
+   "total_new_cases_today": 336,
+   "total_new_deaths_today": 5
+ },
+ {
+   "id": 10,
+   "countryitems": 10,
+   "countryitemstitle": "Bahamas",
+   "code": "BS",
+   "total_cases": 103,
+   "total_deaths": 11,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 11,
+   "countryitems": 11,
+   "countryitemstitle": "Bangladesh",
+   "code": "BD",
+   "total_cases": 81523,
+   "total_deaths": 1095,
+   "total_new_cases_today": 3471,
+   "total_new_deaths_today": 46
+ },
+ {
+   "id": 12,
+   "countryitems": 12,
+   "countryitemstitle": "Belarus",
+   "code": "BY",
+   "total_cases": 52520,
+   "total_deaths": 298,
+   "total_new_cases_today": 704,
+   "total_new_deaths_today": 5
+ },
+ {
+   "id": 13,
+   "countryitems": 13,
+   "countryitemstitle": "Belgium",
+   "code": "BE",
+   "total_cases": 59819,
+   "total_deaths": 9646,
+   "total_new_cases_today": 108,
+   "total_new_deaths_today": 10
+ },
+ {
+   "id": 14,
+   "countryitems": 14,
+   "countryitemstitle": "Belize",
+   "code": "BZ",
+   "total_cases": 20,
+   "total_deaths": 2,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 15,
+   "countryitems": 15,
+   "countryitemstitle": "Benin",
+   "code": "BJ",
+   "total_cases": 388,
+   "total_deaths": 5,
+   "total_new_cases_today": 83,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 16,
+   "countryitems": 16,
+   "countryitemstitle": "Bhutan",
+   "code": "BT",
+   "total_cases": 62,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 17,
+   "countryitems": 17,
+   "countryitemstitle": "Bolivia",
+   "code": "BO",
+   "total_cases": 16165,
+   "total_deaths": 533,
+   "total_new_cases_today": 884,
+   "total_new_deaths_today": 21
+ },
+ {
+   "id": 18,
+   "countryitems": 18,
+   "countryitemstitle": "Bosnia and Herzegovina",
+   "code": "BA",
+   "total_cases": 2893,
+   "total_deaths": 163,
+   "total_new_cases_today": 61,
+   "total_new_deaths_today": 2
+ },
+ {
+   "id": 19,
+   "countryitems": 19,
+   "countryitemstitle": "Botswana",
+   "code": "BW",
+   "total_cases": 48,
+   "total_deaths": 1,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 20,
+   "countryitems": 20,
+   "countryitemstitle": "Brazil",
+   "code": "BR",
+   "total_cases": 805649,
+   "total_deaths": 41058,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 21,
+   "countryitems": 21,
+   "countryitemstitle": "Brunei Darussalam",
+   "code": "BN",
+   "total_cases": 141,
+   "total_deaths": 2,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 22,
+   "countryitems": 22,
+   "countryitemstitle": "Bulgaria",
+   "code": "BG",
+   "total_cases": 3086,
+   "total_deaths": 168,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 23,
+   "countryitems": 23,
+   "countryitemstitle": "Burkina Faso",
+   "code": "BF",
+   "total_cases": 892,
+   "total_deaths": 53,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 24,
+   "countryitems": 24,
+   "countryitemstitle": "Burundi",
+   "code": "BI",
+   "total_cases": 85,
+   "total_deaths": 1,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 25,
+   "countryitems": 25,
+   "countryitemstitle": "Cambodia",
+   "code": "KH",
+   "total_cases": 126,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 26,
+   "countryitems": 26,
+   "countryitemstitle": "Cameroon",
+   "code": "CM",
+   "total_cases": 8681,
+   "total_deaths": 212,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 27,
+   "countryitems": 27,
+   "countryitemstitle": "Canada",
+   "code": "CA",
+   "total_cases": 97712,
+   "total_deaths": 8005,
+   "total_new_cases_today": 182,
+   "total_new_deaths_today": 11
+ },
+ {
+   "id": 28,
+   "countryitems": 28,
+   "countryitemstitle": "Central African Republic",
+   "code": "CF",
+   "total_cases": 1,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 29,
+   "countryitems": 29,
+   "countryitemstitle": "Chad",
+   "code": "TD",
+   "total_cases": 848,
+   "total_deaths": 72,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 30,
+   "countryitems": 30,
+   "countryitemstitle": "Chile",
+   "code": "CL",
+   "total_cases": 154092,
+   "total_deaths": 2648,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 31,
+   "countryitems": 31,
+   "countryitemstitle": "China",
+   "code": "CN",
+   "total_cases": 83064,
+   "total_deaths": 4634,
+   "total_new_cases_today": 7,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 32,
+   "countryitems": 32,
+   "countryitemstitle": "Colombia",
+   "code": "CO",
+   "total_cases": 45212,
+   "total_deaths": 1488,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 33,
+   "countryitems": 33,
+   "countryitemstitle": "Congo",
+   "code": "CG",
+   "total_cases": 728,
+   "total_deaths": 24,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 34,
+   "countryitems": 34,
+   "countryitemstitle": "Democratic Republic of Congo",
+   "code": "CD",
+   "total_cases": 0,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 35,
+   "countryitems": 35,
+   "countryitemstitle": "Costa Rica",
+   "code": "CR",
+   "total_cases": 1538,
+   "total_deaths": 12,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 36,
+   "countryitems": 36,
+   "countryitemstitle": "Ivory Coast",
+   "code": "CI",
+   "total_cases": 4404,
+   "total_deaths": 41,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 37,
+   "countryitems": 37,
+   "countryitemstitle": "Croatia",
+   "code": "HR",
+   "total_cases": 2249,
+   "total_deaths": 107,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 38,
+   "countryitems": 38,
+   "countryitemstitle": "Cuba",
+   "code": "CU",
+   "total_cases": 2233,
+   "total_deaths": 84,
+   "total_new_cases_today": 14,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 39,
+   "countryitems": 39,
+   "countryitemstitle": "Cyprus",
+   "code": "CY",
+   "total_cases": 975,
+   "total_deaths": 18,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 40,
+   "countryitems": 40,
+   "countryitemstitle": "Czechia",
+   "code": "CZ",
+   "total_cases": 9887,
+   "total_deaths": 329,
+   "total_new_cases_today": 32,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 41,
+   "countryitems": 41,
+   "countryitemstitle": "Denmark",
+   "code": "DK",
+   "total_cases": 12099,
+   "total_deaths": 594,
+   "total_new_cases_today": 64,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 42,
+   "countryitems": 42,
+   "countryitemstitle": "Djibouti",
+   "code": "DJ",
+   "total_cases": 4441,
+   "total_deaths": 38,
+   "total_new_cases_today": 43,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 43,
+   "countryitems": 43,
+   "countryitemstitle": "Dominican Republic",
+   "code": "DO",
+   "total_cases": 22008,
+   "total_deaths": 568,
+   "total_new_cases_today": 571,
+   "total_new_deaths_today": 7
+ },
+ {
+   "id": 44,
+   "countryitems": 44,
+   "countryitemstitle": "Ecuador",
+   "code": "EC",
+   "total_cases": 44440,
+   "total_deaths": 3720,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 45,
+   "countryitems": 45,
+   "countryitemstitle": "Egypt",
+   "code": "EG",
+   "total_cases": 39726,
+   "total_deaths": 1377,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 46,
+   "countryitems": 46,
+   "countryitemstitle": "El Salvador",
+   "code": "SV",
+   "total_cases": 3481,
+   "total_deaths": 68,
+   "total_new_cases_today": 108,
+   "total_new_deaths_today": 4
+ },
+ {
+   "id": 47,
+   "countryitems": 47,
+   "countryitemstitle": "Equatorial Guinea",
+   "code": "GQ",
+   "total_cases": 1306,
+   "total_deaths": 12,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 48,
+   "countryitems": 48,
+   "countryitemstitle": "Eritrea",
+   "code": "ER",
+   "total_cases": 41,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 49,
+   "countryitems": 49,
+   "countryitemstitle": "Estonia",
+   "code": "EE",
+   "total_cases": 1970,
+   "total_deaths": 69,
+   "total_new_cases_today": 5,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 50,
+   "countryitems": 50,
+   "countryitemstitle": "Ethiopia",
+   "code": "ET",
+   "total_cases": 2915,
+   "total_deaths": 47,
+   "total_new_cases_today": 245,
+   "total_new_deaths_today": 7
+ },
+ {
+   "id": 51,
+   "countryitems": 51,
+   "countryitemstitle": "Falkland Islands",
+   "code": "FK",
+   "total_cases": 13,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 52,
+   "countryitems": 52,
+   "countryitemstitle": "Fiji",
+   "code": "FJ",
+   "total_cases": 18,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 53,
+   "countryitems": 53,
+   "countryitemstitle": "Finland",
+   "code": "FI",
+   "total_cases": 7073,
+   "total_deaths": 325,
+   "total_new_cases_today": 9,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 54,
+   "countryitems": 54,
+   "countryitemstitle": "France",
+   "code": "FR",
+   "total_cases": 155561,
+   "total_deaths": 29346,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 55,
+   "countryitems": 55,
+   "countryitemstitle": "French Guiana",
+   "code": "GF",
+   "total_cases": 1043,
+   "total_deaths": 2,
+   "total_new_cases_today": 126,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 56,
+   "countryitems": 56,
+   "countryitemstitle": "French Southern Territories",
+   "code": "TF",
+   "total_cases": 0,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 57,
+   "countryitems": 57,
+   "countryitemstitle": "Gabon",
+   "code": "GA",
+   "total_cases": 3463,
+   "total_deaths": 23,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 58,
+   "countryitems": 58,
+   "countryitemstitle": "Gambia",
+   "code": "GM",
+   "total_cases": 28,
+   "total_deaths": 1,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 59,
+   "countryitems": 59,
+   "countryitemstitle": "Georgia",
+   "code": "GE",
+   "total_cases": 843,
+   "total_deaths": 13,
+   "total_new_cases_today": 12,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 60,
+   "countryitems": 60,
+   "countryitemstitle": "Germany",
+   "code": "DE",
+   "total_cases": 186933,
+   "total_deaths": 8853,
+   "total_new_cases_today": 138,
+   "total_new_deaths_today": 2
+ },
+ {
+   "id": 61,
+   "countryitems": 61,
+   "countryitemstitle": "Ghana",
+   "code": "GH",
+   "total_cases": 10856,
+   "total_deaths": 48,
+   "total_new_cases_today": 498,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 62,
+   "countryitems": 62,
+   "countryitemstitle": "Greece",
+   "code": "GR",
+   "total_cases": 3108,
+   "total_deaths": 183,
+   "total_new_cases_today": 20,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 63,
+   "countryitems": 63,
+   "countryitemstitle": "Greenland",
+   "code": "GL",
+   "total_cases": 13,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 64,
+   "countryitems": 64,
+   "countryitemstitle": "Guatemala",
+   "code": "GT",
+   "total_cases": 8561,
+   "total_deaths": 334,
+   "total_new_cases_today": 340,
+   "total_new_deaths_today": 18
+ },
+ {
+   "id": 65,
+   "countryitems": 65,
+   "countryitemstitle": "Guinea",
+   "code": "GN",
+   "total_cases": 4372,
+   "total_deaths": 23,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 66,
+   "countryitems": 66,
+   "countryitemstitle": "Guinea-Bissau",
+   "code": "GW",
+   "total_cases": 1389,
+   "total_deaths": 12,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 67,
+   "countryitems": 67,
+   "countryitemstitle": "Guyana",
+   "code": "GY",
+   "total_cases": 158,
+   "total_deaths": 12,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 68,
+   "countryitems": 68,
+   "countryitemstitle": "Haiti",
+   "code": "HT",
+   "total_cases": 3941,
+   "total_deaths": 64,
+   "total_new_cases_today": 145,
+   "total_new_deaths_today": 6
+ },
+ {
+   "id": 69,
+   "countryitems": 69,
+   "countryitemstitle": "Honduras",
+   "code": "HN",
+   "total_cases": 7669,
+   "total_deaths": 294,
+   "total_new_cases_today": 309,
+   "total_new_deaths_today": 4
+ },
+ {
+   "id": 70,
+   "countryitems": 70,
+   "countryitemstitle": "Hungary",
+   "code": "HU",
+   "total_cases": 4053,
+   "total_deaths": 555,
+   "total_new_cases_today": 14,
+   "total_new_deaths_today": 2
+ },
+ {
+   "id": 71,
+   "countryitems": 71,
+   "countryitemstitle": "Iceland",
+   "code": "IS",
+   "total_cases": 1807,
+   "total_deaths": 10,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 72,
+   "countryitems": 72,
+   "countryitemstitle": "India",
+   "code": "IN",
+   "total_cases": 305951,
+   "total_deaths": 8718,
+   "total_new_cases_today": 7668,
+   "total_new_deaths_today": 217
+ },
+ {
+   "id": 73,
+   "countryitems": 73,
+   "countryitemstitle": "Indonesia",
+   "code": "ID",
+   "total_cases": 36406,
+   "total_deaths": 2048,
+   "total_new_cases_today": 1111,
+   "total_new_deaths_today": 48
+ },
+ {
+   "id": 74,
+   "countryitems": 75,
+   "countryitemstitle": "Iraq",
+   "code": "IQ",
+   "total_cases": 17770,
+   "total_deaths": 496,
+   "total_new_cases_today": 1095,
+   "total_new_deaths_today": 39
+ },
+ {
+   "id": 75,
+   "countryitems": 76,
+   "countryitemstitle": "Ireland",
+   "code": "IE",
+   "total_cases": 25238,
+   "total_deaths": 1703,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 76,
+   "countryitems": 77,
+   "countryitemstitle": "Israel",
+   "code": "IL",
+   "total_cases": 18701,
+   "total_deaths": 300,
+   "total_new_cases_today": 132,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 77,
+   "countryitems": 78,
+   "countryitemstitle": "Italy",
+   "code": "IT",
+   "total_cases": 236142,
+   "total_deaths": 34167,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 78,
+   "countryitems": 79,
+   "countryitemstitle": "Jamaica",
+   "code": "JM",
+   "total_cases": 611,
+   "total_deaths": 10,
+   "total_new_cases_today": 6,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 79,
+   "countryitems": 80,
+   "countryitemstitle": "Japan",
+   "code": "JP",
+   "total_cases": 17292,
+   "total_deaths": 920,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 80,
+   "countryitems": 81,
+   "countryitemstitle": "Jordan",
+   "code": "JO",
+   "total_cases": 890,
+   "total_deaths": 9,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 81,
+   "countryitems": 82,
+   "countryitemstitle": "Kazakhstan",
+   "code": "KZ",
+   "total_cases": 13872,
+   "total_deaths": 68,
+   "total_new_cases_today": 314,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 82,
+   "countryitems": 83,
+   "countryitemstitle": "Kenya",
+   "code": "KE",
+   "total_cases": 3305,
+   "total_deaths": 96,
+   "total_new_cases_today": 90,
+   "total_new_deaths_today": 4
+ },
+ {
+   "id": 83,
+   "countryitems": 84,
+   "countryitemstitle": "Korea",
+   "code": "KP",
+   "total_cases": 0,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 84,
+   "countryitems": 85,
+   "countryitemstitle": "South Korea",
+   "code": "KR",
+   "total_cases": 6593,
+   "total_deaths": 42,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 85,
+   "countryitems": 86,
+   "countryitemstitle": "Kuwait",
+   "code": "KW",
+   "total_cases": 34952,
+   "total_deaths": 285,
+   "total_new_cases_today": 520,
+   "total_new_deaths_today": 6
+ },
+ {
+   "id": 86,
+   "countryitems": 87,
+   "countryitemstitle": "Kyrgyzstan",
+   "code": "KG",
+   "total_cases": 2166,
+   "total_deaths": 26,
+   "total_new_cases_today": 37,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 87,
+   "countryitems": 88,
+   "countryitemstitle": "Lao",
+   "code": "LA",
+   "total_cases": 0,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 88,
+   "countryitems": 89,
+   "countryitemstitle": "Latvia",
+   "code": "LV",
+   "total_cases": 1096,
+   "total_deaths": 27,
+   "total_new_cases_today": 2,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 89,
+   "countryitems": 90,
+   "countryitemstitle": "Lebanon",
+   "code": "LB",
+   "total_cases": 1422,
+   "total_deaths": 31,
+   "total_new_cases_today": 20,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 90,
+   "countryitems": 91,
+   "countryitemstitle": "Lesotho",
+   "code": "LS",
+   "total_cases": 4,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 91,
+   "countryitems": 92,
+   "countryitemstitle": "Liberia",
+   "code": "LR",
+   "total_cases": 410,
+   "total_deaths": 31,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 92,
+   "countryitems": 93,
+   "countryitemstitle": "Libya",
+   "code": "LY",
+   "total_cases": 393,
+   "total_deaths": 5,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 93,
+   "countryitems": 94,
+   "countryitemstitle": "Lithuania",
+   "code": "LT",
+   "total_cases": 1756,
+   "total_deaths": 74,
+   "total_new_cases_today": 4,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 94,
+   "countryitems": 95,
+   "countryitemstitle": "Luxembourg",
+   "code": "LU",
+   "total_cases": 4052,
+   "total_deaths": 110,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 95,
+   "countryitems": 96,
+   "countryitemstitle": "Macedonia",
+   "code": "MK",
+   "total_cases": 3701,
+   "total_deaths": 171,
+   "total_new_cases_today": 163,
+   "total_new_deaths_today": 2
+ },
+ {
+   "id": 96,
+   "countryitems": 97,
+   "countryitemstitle": "Madagascar",
+   "code": "MG",
+   "total_cases": 1240,
+   "total_deaths": 10,
+   "total_new_cases_today": 37,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 97,
+   "countryitems": 98,
+   "countryitemstitle": "Malawi",
+   "code": "MW",
+   "total_cases": 481,
+   "total_deaths": 4,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 98,
+   "countryitems": 99,
+   "countryitemstitle": "Malaysia",
+   "code": "MY",
+   "total_cases": 8402,
+   "total_deaths": 119,
+   "total_new_cases_today": 33,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 99,
+   "countryitems": 100,
+   "countryitemstitle": "Mali",
+   "code": "ML",
+   "total_cases": 1752,
+   "total_deaths": 101,
+   "total_new_cases_today": 30,
+   "total_new_deaths_today": 4
+ },
+ {
+   "id": 100,
+   "countryitems": 101,
+   "countryitemstitle": "Mauritania",
+   "code": "MR",
+   "total_cases": 1439,
+   "total_deaths": 74,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 101,
+   "countryitems": 102,
+   "countryitemstitle": "Mexico",
+   "code": "MX",
+   "total_cases": 133974,
+   "total_deaths": 15944,
+   "total_new_cases_today": 4790,
+   "total_new_deaths_today": 587
+ },
+ {
+   "id": 102,
+   "countryitems": 103,
+   "countryitemstitle": "Moldova",
+   "code": "MD",
+   "total_cases": 11093,
+   "total_deaths": 385,
+   "total_new_cases_today": 366,
+   "total_new_deaths_today": 10
+ },
+ {
+   "id": 103,
+   "countryitems": 104,
+   "countryitemstitle": "Mongolia",
+   "code": "MN",
+   "total_cases": 197,
+   "total_deaths": 0,
+   "total_new_cases_today": 3,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 104,
+   "countryitems": 105,
+   "countryitemstitle": "Montenegro",
+   "code": "ME",
+   "total_cases": 324,
+   "total_deaths": 9,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 105,
+   "countryitems": 106,
+   "countryitemstitle": "Morocco",
+   "code": "MA",
+   "total_cases": 8581,
+   "total_deaths": 212,
+   "total_new_cases_today": 44,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 106,
+   "countryitems": 107,
+   "countryitemstitle": "Mozambique",
+   "code": "MZ",
+   "total_cases": 509,
+   "total_deaths": 2,
+   "total_new_cases_today": 20,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 107,
+   "countryitems": 108,
+   "countryitemstitle": "Myanmar",
+   "code": "MM",
+   "total_cases": 261,
+   "total_deaths": 6,
+   "total_new_cases_today": 1,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 108,
+   "countryitems": 109,
+   "countryitemstitle": "Namibia",
+   "code": "NA",
+   "total_cases": 31,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 109,
+   "countryitems": 110,
+   "countryitemstitle": "Nepal",
+   "code": "NP",
+   "total_cases": 5062,
+   "total_deaths": 16,
+   "total_new_cases_today": 448,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 110,
+   "countryitems": 111,
+   "countryitemstitle": "Netherlands",
+   "code": "NL",
+   "total_cases": 48461,
+   "total_deaths": 6053,
+   "total_new_cases_today": 210,
+   "total_new_deaths_today": 9
+ },
+ {
+   "id": 111,
+   "countryitems": 112,
+   "countryitemstitle": "New Caledonia",
+   "code": "NC",
+   "total_cases": 21,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 112,
+   "countryitems": 113,
+   "countryitemstitle": "New Zealand",
+   "code": "NZ",
+   "total_cases": 1504,
+   "total_deaths": 22,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 113,
+   "countryitems": 114,
+   "countryitemstitle": "Nicaragua",
+   "code": "NI",
+   "total_cases": 1464,
+   "total_deaths": 55,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 114,
+   "countryitems": 115,
+   "countryitemstitle": "Niger",
+   "code": "NE",
+   "total_cases": 974,
+   "total_deaths": 65,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 115,
+   "countryitems": 116,
+   "countryitemstitle": "Nigeria",
+   "code": "NG",
+   "total_cases": 14554,
+   "total_deaths": 387,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 116,
+   "countryitems": 117,
+   "countryitemstitle": "Norway",
+   "code": "NO",
+   "total_cases": 8613,
+   "total_deaths": 242,
+   "total_new_cases_today": 5,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 117,
+   "countryitems": 118,
+   "countryitemstitle": "Oman",
+   "code": "OM",
+   "total_cases": 21071,
+   "total_deaths": 96,
+   "total_new_cases_today": 1117,
+   "total_new_deaths_today": 7
+ },
+ {
+   "id": 118,
+   "countryitems": 119,
+   "countryitemstitle": "Pakistan",
+   "code": "PK",
+   "total_cases": 125933,
+   "total_deaths": 2463,
+   "total_new_cases_today": 6397,
+   "total_new_deaths_today": 107
+ },
+ {
+   "id": 119,
+   "countryitems": 120,
+   "countryitemstitle": "Palestine",
+   "code": "PS",
+   "total_cases": 489,
+   "total_deaths": 3,
+   "total_new_cases_today": 2,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 120,
+   "countryitems": 121,
+   "countryitemstitle": "Panama",
+   "code": "PA",
+   "total_cases": 18586,
+   "total_deaths": 418,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 121,
+   "countryitems": 122,
+   "countryitemstitle": "Papua New Guinea",
+   "code": "PG",
+   "total_cases": 8,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 122,
+   "countryitems": 123,
+   "countryitemstitle": "Paraguay",
+   "code": "PY",
+   "total_cases": 1230,
+   "total_deaths": 11,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 123,
+   "countryitems": 124,
+   "countryitemstitle": "Peru",
+   "code": "PE",
+   "total_cases": 214788,
+   "total_deaths": 6109,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 124,
+   "countryitems": 125,
+   "countryitemstitle": "Philippines",
+   "code": "PH",
+   "total_cases": 24787,
+   "total_deaths": 1052,
+   "total_new_cases_today": 612,
+   "total_new_deaths_today": 16
+ },
+ {
+   "id": 125,
+   "countryitems": 126,
+   "countryitemstitle": "Poland",
+   "code": "PL",
+   "total_cases": 28577,
+   "total_deaths": 1222,
+   "total_new_cases_today": 376,
+   "total_new_deaths_today": 7
+ },
+ {
+   "id": 126,
+   "countryitems": 127,
+   "countryitemstitle": "Portugal",
+   "code": "PT",
+   "total_cases": 36180,
+   "total_deaths": 1505,
+   "total_new_cases_today": 270,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 127,
+   "countryitems": 128,
+   "countryitemstitle": "Puerto Rico",
+   "code": "PR",
+   "total_cases": 39,
+   "total_deaths": 2,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 128,
+   "countryitems": 129,
+   "countryitemstitle": "Qatar",
+   "code": "QA",
+   "total_cases": 76588,
+   "total_deaths": 70,
+   "total_new_cases_today": 1517,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 129,
+   "countryitems": 130,
+   "countryitemstitle": "Republic of Kosovo",
+   "code": "XK",
+   "total_cases": 0,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 130,
+   "countryitems": 131,
+   "countryitemstitle": "Romania",
+   "code": "RO",
+   "total_cases": 21404,
+   "total_deaths": 1380,
+   "total_new_cases_today": 222,
+   "total_new_deaths_today": 11
+ },
+ {
+   "id": 131,
+   "countryitems": 133,
+   "countryitemstitle": "Rwanda",
+   "code": "RW",
+   "total_cases": 494,
+   "total_deaths": 2,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 132,
+   "countryitems": 134,
+   "countryitemstitle": "Saudi Arabia",
+   "code": "SA",
+   "total_cases": 119942,
+   "total_deaths": 893,
+   "total_new_cases_today": 3921,
+   "total_new_deaths_today": 36
+ },
+ {
+   "id": 133,
+   "countryitems": 135,
+   "countryitemstitle": "Senegal",
+   "code": "SN",
+   "total_cases": 4851,
+   "total_deaths": 56,
+   "total_new_cases_today": 92,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 134,
+   "countryitems": 136,
+   "countryitemstitle": "Serbia",
+   "code": "RS",
+   "total_cases": 12175,
+   "total_deaths": 252,
+   "total_new_cases_today": 73,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 135,
+   "countryitems": 137,
+   "countryitemstitle": "Sierra Leone",
+   "code": "SL",
+   "total_cases": 1103,
+   "total_deaths": 51,
+   "total_new_cases_today": 18,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 136,
+   "countryitems": 138,
+   "countryitemstitle": "Slovakia",
+   "code": "SK",
+   "total_cases": 1542,
+   "total_deaths": 28,
+   "total_new_cases_today": 1,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 137,
+   "countryitems": 139,
+   "countryitemstitle": "Slovenia",
+   "code": "SI",
+   "total_cases": 1490,
+   "total_deaths": 109,
+   "total_new_cases_today": 2,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 138,
+   "countryitems": 140,
+   "countryitemstitle": "Solomon Islands",
+   "code": "SB",
+   "total_cases": 0,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 139,
+   "countryitems": 141,
+   "countryitemstitle": "Somalia",
+   "code": "SO",
+   "total_cases": 2513,
+   "total_deaths": 85,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 140,
+   "countryitems": 142,
+   "countryitemstitle": "South Africa",
+   "code": "ZA",
+   "total_cases": 58568,
+   "total_deaths": 1284,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 141,
+   "countryitems": 143,
+   "countryitemstitle": "South Sudan",
+   "code": "SS",
+   "total_cases": 1670,
+   "total_deaths": 24,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 142,
+   "countryitems": 144,
+   "countryitemstitle": "Spain",
+   "code": "ES",
+   "total_cases": 290289,
+   "total_deaths": 27136,
+   "total_new_cases_today": 502,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 143,
+   "countryitems": 145,
+   "countryitemstitle": "Sri Lanka",
+   "code": "LK",
+   "total_cases": 1878,
+   "total_deaths": 11,
+   "total_new_cases_today": 1,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 144,
+   "countryitems": 146,
+   "countryitemstitle": "Sudan",
+   "code": "SD",
+   "total_cases": 6730,
+   "total_deaths": 413,
+   "total_new_cases_today": 148,
+   "total_new_deaths_today": 12
+ },
+ {
+   "id": 145,
+   "countryitems": 147,
+   "countryitemstitle": "Suriname",
+   "code": "SR",
+   "total_cases": 168,
+   "total_deaths": 2,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 146,
+   "countryitems": 148,
+   "countryitemstitle": "Svalbard and Jan Mayen",
+   "code": "SJ",
+   "total_cases": 0,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 147,
+   "countryitems": 149,
+   "countryitemstitle": "Swaziland",
+   "code": "SZ",
+   "total_cases": 0,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 148,
+   "countryitems": 150,
+   "countryitemstitle": "Sweden",
+   "code": "SE",
+   "total_cases": 49684,
+   "total_deaths": 4854,
+   "total_new_cases_today": 205,
+   "total_new_deaths_today": 40
+ },
+ {
+   "id": 149,
+   "countryitems": 151,
+   "countryitemstitle": "Switzerland",
+   "code": "CH",
+   "total_cases": 31063,
+   "total_deaths": 1938,
+   "total_new_cases_today": 19,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 150,
+   "countryitems": 152,
+   "countryitemstitle": "Syrian Arab Republic",
+   "code": "SY",
+   "total_cases": 0,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 151,
+   "countryitems": 153,
+   "countryitemstitle": "Taiwan",
+   "code": "TW",
+   "total_cases": 443,
+   "total_deaths": 7,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 152,
+   "countryitems": 154,
+   "countryitemstitle": "Tajikistan",
+   "code": "TJ",
+   "total_cases": 4902,
+   "total_deaths": 49,
+   "total_new_cases_today": 68,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 153,
+   "countryitems": 155,
+   "countryitemstitle": "Tanzania",
+   "code": "TZ",
+   "total_cases": 509,
+   "total_deaths": 21,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 154,
+   "countryitems": 156,
+   "countryitemstitle": "Thailand",
+   "code": "TH",
+   "total_cases": 3129,
+   "total_deaths": 58,
+   "total_new_cases_today": 4,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 155,
+   "countryitems": 157,
+   "countryitemstitle": "Timor-Leste",
+   "code": "TL",
+   "total_cases": 0,
+   "total_deaths": 0,
+   "total_new_cases_today": 24,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 156,
+   "countryitems": 158,
+   "countryitemstitle": "Togo",
+   "code": "TG",
+   "total_cases": 524,
+   "total_deaths": 13,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 157,
+   "countryitems": 159,
+   "countryitemstitle": "Trinidad and Tobago",
+   "code": "TT",
+   "total_cases": 117,
+   "total_deaths": 8,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 158,
+   "countryitems": 160,
+   "countryitemstitle": "Tunisia",
+   "code": "TN",
+   "total_cases": 1093,
+   "total_deaths": 49,
+   "total_new_cases_today": 6,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 159,
+   "countryitems": 161,
+   "countryitemstitle": "Turkey",
+   "code": "TR",
+   "total_cases": 174023,
+   "total_deaths": 4763,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 160,
+   "countryitems": 162,
+   "countryitemstitle": "Turkmenistan",
+   "code": "TM",
+   "total_cases": 0,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 161,
+   "countryitems": 163,
+   "countryitemstitle": "Uganda",
+   "code": "UG",
+   "total_cases": 686,
+   "total_deaths": 0,
+   "total_new_cases_today": 7,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 162,
+   "countryitems": 164,
+   "countryitemstitle": "Ukraine",
+   "code": "UA",
+   "total_cases": 29753,
+   "total_deaths": 870,
+   "total_new_cases_today": 683,
+   "total_new_deaths_today": 16
+ },
+ {
+   "id": 163,
+   "countryitems": 166,
+   "countryitemstitle": "United Kingdom",
+   "code": "GB",
+   "total_cases": 292950,
+   "total_deaths": 41481,
+   "total_new_cases_today": 1541,
+   "total_new_deaths_today": 202
+ },
+ {
+   "id": 164,
+   "countryitems": 167,
+   "countryitemstitle": "USA",
+   "code": "US",
+   "total_cases": 2094368,
+   "total_deaths": 116138,
+   "total_new_cases_today": 4667,
+   "total_new_deaths_today": 104
+ },
+ {
+   "id": 165,
+   "countryitems": 168,
+   "countryitemstitle": "Uruguay",
+   "code": "UY",
+   "total_cases": 847,
+   "total_deaths": 23,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 166,
+   "countryitems": 169,
+   "countryitemstitle": "Uzbekistan",
+   "code": "UZ",
+   "total_cases": 4837,
+   "total_deaths": 19,
+   "total_new_cases_today": 96,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 167,
+   "countryitems": 170,
+   "countryitemstitle": "Vanuatu",
+   "code": "VU",
+   "total_cases": 0,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 168,
+   "countryitems": 171,
+   "countryitemstitle": "Venezuela",
+   "code": "VE",
+   "total_cases": 2814,
+   "total_deaths": 23,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 169,
+   "countryitems": 173,
+   "countryitemstitle": "Western Sahara",
+   "code": "EH",
+   "total_cases": 9,
+   "total_deaths": 1,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 170,
+   "countryitems": 174,
+   "countryitemstitle": "Yemen",
+   "code": "YE",
+   "total_cases": 591,
+   "total_deaths": 136,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 171,
+   "countryitems": 175,
+   "countryitemstitle": "Zambia",
+   "code": "ZM",
+   "total_cases": 1200,
+   "total_deaths": 10,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 172,
+   "countryitems": 176,
+   "countryitemstitle": "Zimbabwe",
+   "code": "ZW",
+   "total_cases": 332,
+   "total_deaths": 4,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 173,
+   "countryitems": 177,
+   "countryitemstitle": "Singapore",
+   "code": "SG",
+   "total_cases": 39850,
+   "total_deaths": 25,
+   "total_new_cases_today": 463,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 174,
+   "countryitems": 178,
+   "countryitemstitle": "Hong Kong",
+   "code": "HK",
+   "total_cases": 1109,
+   "total_deaths": 4,
+   "total_new_cases_today": 1,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 175,
+   "countryitems": 195,
+   "countryitemstitle": "DR Congo",
+   "code": "CD",
+   "total_cases": 0,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 176,
+   "countryitems": 196,
+   "countryitemstitle": "Kosovo",
+   "code": "XK",
+   "total_cases": 0,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 177,
+   "countryitems": 179,
+   "countryitemstitle": "Diamond Princess",
+   "code": "DP",
+   "total_cases": 712,
+   "total_deaths": 13,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 178,
+   "countryitems": 180,
+   "countryitemstitle": "Iran",
+   "code": "IR",
+   "total_cases": 182525,
+   "total_deaths": 8659,
+   "total_new_cases_today": 2369,
+   "total_new_deaths_today": 75
+ },
+ {
+   "id": 179,
+   "countryitems": 186,
+   "countryitemstitle": "North Korea",
+   "code": "KP",
+   "total_cases": 0,
+   "total_deaths": 0,
+   "total_new_cases_today": 0,
+   "total_new_deaths_today": 0
+ },
+ {
+   "id": 180,
+   "countryitems": 191,
+   "countryitemstitle": "Russia",
+   "code": "RU",
+   "total_cases": 511423,
+   "total_deaths": 6715,
+   "total_new_cases_today": 8987,
+   "total_new_deaths_today": 183
+ },
+ {
+   "id": 181,
+   "countryitems": 192,
+   "countryitemstitle": "UAE",
+   "code": "AE",
+   "total_cases": 41499,
+   "total_deaths": 287,
+   "total_new_cases_today": 513,
+   "total_new_deaths_today": 1
+ },
+ {
+   "id": 182,
+   "countryitems": 193,
+   "countryitemstitle": "Vietnam",
+   "code": "VN",
+   "total_cases": 333,
+   "total_deaths": 0,
+   "total_new_cases_today": 1,
+   "total_new_deaths_today": 0
+ }
+]
