@@ -1192,7 +1192,6 @@ class Results extends Component<iProps, iState> {
                     States. In the meantime, below we show the data provided
                     by New York City Health as of May 13, 2020.
                     </p>
-
                   <ResultAge sendAge={this.state.data[0]} />
                   <ResultSex sendSex={this.state.data[1]} />
                   <ResultCardiovascular sendCardiovascular={this.state.data[2]} />

@@ -10,14 +10,14 @@ class ResultFinal extends Component<IProps, IState> {
 
   render() {
     var data: any[] = this.props.sendDataResult;
-    var groupAge: string = data[0];
+    var groupAge: any = data[0];
     var ArrValueAge: any = [0.0006, 0.039, 0.224, 0.249, 0.487, 0.75];
-    var Sex: string = data[1];
-    var Cardiovascular: string = data[2];
-    var Diabetes: string = data[3];
-    var Respiratory: string = data[4];
-    var Hypertension: string = data[5];
-    var Cancer: string = data[6];
+    var Sex: any = data[1];
+    var Cardiovascular: any = data[2];
+    var Diabetes: any = data[3];
+    var Respiratory: any = data[4];
+    var Hypertension: any = data[5];
+    var Cancer: any = data[6];
     var SourceCountry: any = this.props.sendSourceCountry;
     var SelectCountry: any = this.props.sendCountry;
 
@@ -87,19 +87,19 @@ class ResultFinal extends Component<IProps, IState> {
       }
     }
     // If Cardiovascular
-    Cardiovascular === "Yes"
+    Cardiovascular === true
       ? (valueCardiovascular = 0.105)
       : (valueCardiovascular = 0);
     // If Diabetes
-    Diabetes === "Yes" ? (valueDiabetes = 0.073) : (valueDiabetes = 0);
+    Diabetes === true ? (valueDiabetes = 0.073) : (valueDiabetes = 0);
     // If Respiratory
-    Respiratory === "Yes" ? (valueRespiratory = 0.063) : (valueRespiratory = 0);
+    Respiratory === true ? (valueRespiratory = 0.063) : (valueRespiratory = 0);
     // If Hypertension
-    Hypertension === "Yes"
+    Hypertension === true
       ? (valueHypertension = 0.084)
       : (valueHypertension = 0);
     // If Cancer
-    Cancer === "Yes" ? (valueCancer = 0.076) : (valueCancer = 0);
+    Cancer === true ? (valueCancer = 0.076) : (valueCancer = 0);
     ResultCondition = (valueAge +
       valueSex +
       valueCardiovascular +

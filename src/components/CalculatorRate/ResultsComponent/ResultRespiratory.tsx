@@ -8,12 +8,12 @@ class ResultRespiratory extends Component<IProps, IState> {
     var Respiratory: any = this.props.sendRespiratory;
     function RenderRespiratory() {
       switch (Respiratory) {
-        case "Yes": {
+        case true: {
           return (
             <p className="valueResult">Chronic Respiratory Disease: 6.3%</p>
           );
         }
-        case "No": {
+        case false: {
           return (
             <></>
           );

@@ -57,55 +57,55 @@ class ResultConditionPie extends Component<IProps, IState> {
         }
         //Dieu kien Cardiovascular Disease
         switch (dataCondition[2]) {
-            case "Yes": {
+            case true: {
                 dataSeries.push(10.5)
                 break;
             }
-            case "No": {
+            case false: {
                 dataSeries.push(0)
                 break;
             }
         }
         // Dieu kien Diabetes
         switch (dataCondition[3]) {
-            case "Yes": {
+            case true: {
                 dataSeries.push(7.3)
                 break;
             }
-            case "No": {
+            case false: {
                 dataSeries.push(0)
                 break;
             }
         }
         // Dieu kien Chronic Respiratory Disease
         switch (dataCondition[4]) {
-            case "Yes": {
+            case true: {
                 dataSeries.push(6.3)
                 break;
             }
-            case "No": {
+            case false: {
                 dataSeries.push(0)
                 break;
             }
         }
         // Dieu kien Hypertension
         switch (dataCondition[5]) {
-            case "Yes": {
+            case true: {
                 dataSeries.push(6)
                 break;
             }
-            case "No": {
+            case false: {
                 dataSeries.push(0)
                 break;
             }
         }
         // Dieu kien Cancer
         switch (dataCondition[6]) {
-            case "Yes": {
+            case true: {
                 dataSeries.push(5.6)
                 break;
             }
-            case "No": {
+            case false: {
                 dataSeries.push(0)
                 break;
             }

@@ -35,7 +35,6 @@ interface IState {
   data: any;
   isSubmit: any;
   CountryOption: any;
-  checkedA:any;
   // Flag: any;
 }
 class FormCalculatorRate extends Component<iProps, IState> {
@@ -44,11 +43,11 @@ class FormCalculatorRate extends Component<iProps, IState> {
     this.state = {
       groupAge: "groupAge1",
       groupSex: "Male",
-      Cardiovascular: "Yes",
-      Diabetes: "Yes",
-      Respiratory: "Yes",
-      Hypertension: "Yes",
-      Cancer: "Yes",
+      Cardiovascular: true,
+      Diabetes: true,
+      Respiratory: true,
+      Hypertension: true,
+      Cancer: true,
       nameAge: [
         "groupAge1",
         "groupAge2",
@@ -62,7 +61,6 @@ class FormCalculatorRate extends Component<iProps, IState> {
       data: [],
       isSubmit: false,
       CountryOption: "AF",
-      checkedA:true
       // Flag: 'https://cdn.jsdelivr.net/gh/hjnilsson/country-flags@latest/svg/af.svg'
     };
   }
@@ -80,41 +78,6 @@ class FormCalculatorRate extends Component<iProps, IState> {
     //   this.state.Stroke,
     //   this.state.Heart
     // );
-  };
-  onHandleClickAge = (event: any) => {
-    this.setState({
-      groupAge: event.target.name,
-    });
-  };
-  onHandleClickSex = (event: any) => {
-    this.setState({
-      groupSex: event.target.name,
-    });
-  };
-  onHandleClickCardiovascular = (event: any) => {
-    this.setState({
-      Cardiovascular: event.target.value,
-    });
-  };
-  onHandleClickDiabetes = (event: any) => {
-    this.setState({
-      Diabetes: event.target.value,
-    });
-  };
-  onHandleClickRespiratory = (event: any) => {
-    this.setState({
-      Respiratory: event.target.value,
-    });
-  };
-  onHandleClickHypertension = (event: any) => {
-    this.setState({
-      Hypertension: event.target.value,
-    });
-  };
-  onHandleClickCancer = (event: any) => {
-    this.setState({
-      Cancer: event.target.value,
-    });
   };
   // Bắt sự kiện khi Click thì gửi toàn bộ dữ liệu State về thằng cha calculatorRate
   onClick = () => {
@@ -151,12 +114,42 @@ class FormCalculatorRate extends Component<iProps, IState> {
     console.log(event.value);
     this.setState({ CountryOption: event.value })
   }
-  handleChangeSwitch(value:any){
+  handleChangeSwitchCardiovascular(value:any){
     this.setState({
-      checkedA:!value,
       Cardiovascular: !value,
     })
   }
+  handleChangeSwitchDiabetes(value:any ){
+    this.setState({
+      Diabetes:!value
+    })
+  }
+  handleChangeSwitchRespiratory(value:any)
+  {
+    this.setState({
+      Respiratory:!value
+    })
+  }
+  handleChangeSwitchHypertension(value:any){
+    this.setState({
+      Hypertension:!value
+    })
+  }
+  handleChangeSwitchCancer(value:any ){
+    this.setState({
+      Cancer:!value
+    })
+  }
+  onHandleClickAge = (event: any) => {
+    this.setState({
+      groupAge: event.target.name,
+    });
+  };
+  onHandleClickSex = (event: any) => {
+    this.setState({
+      groupSex: event.target.name,
+    });
+  };
   render() {
     function renderFlagImage(flag: any) {
       var temp: any = 'https://cdn.jsdelivr.net/gh/hjnilsson/country-flags@latest/svg/' + flag.toLocaleLowerCase() + '.svg';
@@ -957,122 +950,62 @@ class FormCalculatorRate extends Component<iProps, IState> {
       );
     });
 
-    // var elmGroupCardiovascular: any = this.state.optionYesNo.map(
-    //   (item: any, index: any) => {
-    //     var lblnameCardiovascular: any = ["Yes", "No"];
-    //     return (
-    //       <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6" key={index}>
-    //         <input
-    //           className={
-    //             this.state.Cardiovascular === item
-    //               ? "list-group-item list-group-item-action itemNew active_Form_Cal"
-    //               : "list-group-item list-group-item-action itemNew"
-    //           }
-    //           type="button"
-    //           value={lblnameCardiovascular[index]}
-    //           name="group-Cardiovascular"
-    //           onClick={this.onHandleClickCardiovascular}
-    //           id={lblnameCardiovascular[index]}
-    //         />
-            
-    //       </div>
-          
-    //     );
-    //   }
-      
-    // );
     var elmGroupCardiovascular :any = (
-      <Switch
-              checked={this.state.checkedA}
-              onChange={() => this.handleChangeSwitch(this.state.checkedA)}
+      <div>
+        No <Switch
+              checked={this.state.Cardiovascular}
+              onChange={() => this.handleChangeSwitchCardiovascular(this.state.Cardiovascular)}
+              name="checkedA"
+              inputProps={{ 'aria-label': 'secondary checkbox' }}
+            /> Yes
+      </div>
+    )
+
+    var elmGroupDiabetes: any = (
+      
+      <div>
+        No <Switch
+              checked={this.state.Diabetes}
+              onChange={() => this.handleChangeSwitchDiabetes(this.state.Diabetes)}
               name="checkedA"
               inputProps={{ 'aria-label': 'secondary checkbox' }}
             />
+            Yes
+      </div>
     )
 
-    var elmGroupDiabetes: any = this.state.optionYesNo.map(
-      (item: any, index: any) => {
-        var lblDiabetes: any = ["Yes", "No"];
-        return (
-          <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6" key={index}>
-            <input
-              className={
-                this.state.Diabetes === item
-                  ? "list-group-item list-group-item-action itemNew active_Form_Cal"
-                  : "list-group-item list-group-item-action itemNew"
-              }
-              type="button"
-              value={lblDiabetes[index]}
-              name={lblDiabetes[index]}
-              onClick={this.onHandleClickDiabetes}
-            />
-          </div>
-        );
-      }
-    );
+    var elmGroupRespiratory: any = (
+      <div>
+        No <Switch
+              checked={this.state.Respiratory}
+              onChange={() => this.handleChangeSwitchRespiratory(this.state.Respiratory)}
+              name="checkedA"
+              inputProps={{ 'aria-label': 'secondary checkbox' }}
+            /> Yes
+      </div>
+    )
 
-    var elmGroupRespiratory: any = this.state.optionYesNo.map(
-      (item: any, index: any) => {
-        var lblRespiratory: any = ["Yes", "No"];
-        return (
-          <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6" key={index}>
-            <input
-              className={
-                this.state.Respiratory === item
-                  ? "list-group-item list-group-item-action itemNew active_Form_Cal"
-                  : "list-group-item list-group-item-action itemNew"
-              }
-              type="button"
-              value={lblRespiratory[index]}
-              name={lblRespiratory[index]}
-              onClick={this.onHandleClickRespiratory}
-            />
-          </div>
-        );
-      }
-    );
+    var elmGroupHypertension: any = (
+      <div>
+        No <Switch
+              checked={this.state.Hypertension}
+              onChange={() => this.handleChangeSwitchHypertension(this.state.Hypertension)}
+              name="checkedA"
+              inputProps={{ 'aria-label': 'secondary checkbox' }}
+            /> Yes
+      </div>
+    )
 
-    var elmGroupHypertension: any = this.state.optionYesNo.map(
-      (item: any, index: any) => {
-        var lblHypertension: any = ["Yes", "No"];
-        return (
-          <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6" key={index}>
-            <input
-              className={
-                this.state.Hypertension === item
-                  ? "list-group-item list-group-item-action itemNew active_Form_Cal"
-                  : "list-group-item list-group-item-action itemNew"
-              }
-              type="button"
-              value={lblHypertension[index]}
-              name={lblHypertension[index]}
-              onClick={this.onHandleClickHypertension}
-            />
-          </div>
-        );
-      }
-    );
-
-    var elmGroupCancer: any = this.state.optionYesNo.map(
-      (item: any, index: any) => {
-        var lblCancer: any = ["Yes", "No"];
-        return (
-          <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6" key={index}>
-            <input
-              className={
-                this.state.Cancer === item
-                  ? "list-group-item list-group-item-action itemNew active_Form_Cal"
-                  : "list-group-item list-group-item-action itemNew"
-              }
-              type="button"
-              value={lblCancer[index]}
-              name={lblCancer[index]}
-              onClick={this.onHandleClickCancer}
-            />
-          </div>
-        );
-      }
-    );
+    var elmGroupCancer: any =(
+      <div>
+        No <Switch
+              checked={this.state.Cancer}
+              onChange={() => this.handleChangeSwitchCancer(this.state.Cancer)}
+              name="checkedA"
+              inputProps={{ 'aria-label': 'secondary checkbox' }}
+            /> Yes
+      </div>
+    )
 
     function formatOptionLabel() {
       return Countries.map((item: any) => {
@@ -1083,7 +1016,7 @@ class FormCalculatorRate extends Component<iProps, IState> {
         </div>
       })
     }
-    console.log(this.state.checkedA)
+    console.log(this.state.Cardiovascular)
 
     return (
       <div className="container">

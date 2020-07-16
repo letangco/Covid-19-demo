@@ -8,12 +8,12 @@ class ResultCardiovascular extends Component<IProps, IState> {
     var Cardiovascular: any = this.props.sendCardiovascular;
     function RenderCardiovascular() {
       switch (Cardiovascular) {
-        case "Yes": {
+        case true: {
           return (
             <p className="valueResult">Cardiovascular Disease: 10.5%</p>
           );
         }
-        case "No": {
+        case false: {
           return (
             <></>
           );

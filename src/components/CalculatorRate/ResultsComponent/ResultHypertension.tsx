@@ -8,12 +8,12 @@ class ResultHypertension extends Component<IProps, IState> {
     var Hypertension: any = this.props.sendHypertension;
     function RenderHypertension() {
       switch (Hypertension) {
-        case "Yes": {
+        case true: {
           return (
             <p className="valueResult">Hypertension: 8.4%</p>
           );
         }
-        case "No": {
+        case false: {
           return (
             <></>
           );
