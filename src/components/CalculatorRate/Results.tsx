@@ -16,7 +16,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChartLine
 } from "@fortawesome/free-solid-svg-icons";
-import SizeContext from "antd/lib/config-provider/SizeContext";
 interface iState {
   data: any;
   valueResult: any;

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Select from 'react-select';
 import "./Form.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import vn from '../image/Flag/vn.svg';
+import Switch from '@material-ui/core/Switch';
 import {
   faLungsVirus,
   faFlagCheckered,
@@ -35,6 +35,7 @@ interface IState {
   data: any;
   isSubmit: any;
   CountryOption: any;
+  checkedA:any;
   // Flag: any;
 }
 class FormCalculatorRate extends Component<iProps, IState> {
@@ -61,6 +62,7 @@ class FormCalculatorRate extends Component<iProps, IState> {
       data: [],
       isSubmit: false,
       CountryOption: "AF",
+      checkedA:true
       // Flag: 'https://cdn.jsdelivr.net/gh/hjnilsson/country-flags@latest/svg/af.svg'
     };
   }
@@ -149,7 +151,12 @@ class FormCalculatorRate extends Component<iProps, IState> {
     console.log(event.value);
     this.setState({ CountryOption: event.value })
   }
-
+  handleChangeSwitch(value:any){
+    this.setState({
+      checkedA:!value,
+      Cardiovascular: !value,
+    })
+  }
   render() {
     function renderFlagImage(flag: any) {
       var temp: any = 'https://cdn.jsdelivr.net/gh/hjnilsson/country-flags@latest/svg/' + flag.toLocaleLowerCase() + '.svg';
@@ -950,28 +957,38 @@ class FormCalculatorRate extends Component<iProps, IState> {
       );
     });
 
-    var elmGroupCardiovascular: any = this.state.optionYesNo.map(
-      (item: any, index: any) => {
-        var lblnameCardiovascular: any = ["Yes", "No"];
-        return (
-          <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6" key={index}>
-            <input
-              className={
-                this.state.Cardiovascular === item
-                  ? "list-group-item list-group-item-action itemNew active_Form_Cal"
-                  : "list-group-item list-group-item-action itemNew"
-              }
-              type="button"
-              value={lblnameCardiovascular[index]}
-              name="group-Cardiovascular"
-              onClick={this.onHandleClickCardiovascular}
-              id={lblnameCardiovascular[index]}
+    // var elmGroupCardiovascular: any = this.state.optionYesNo.map(
+    //   (item: any, index: any) => {
+    //     var lblnameCardiovascular: any = ["Yes", "No"];
+    //     return (
+    //       <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6" key={index}>
+    //         <input
+    //           className={
+    //             this.state.Cardiovascular === item
+    //               ? "list-group-item list-group-item-action itemNew active_Form_Cal"
+    //               : "list-group-item list-group-item-action itemNew"
+    //           }
+    //           type="button"
+    //           value={lblnameCardiovascular[index]}
+    //           name="group-Cardiovascular"
+    //           onClick={this.onHandleClickCardiovascular}
+    //           id={lblnameCardiovascular[index]}
+    //         />
+            
+    //       </div>
+          
+    //     );
+    //   }
+      
+    // );
+    var elmGroupCardiovascular :any = (
+      <Switch
+              checked={this.state.checkedA}
+              onChange={() => this.handleChangeSwitch(this.state.checkedA)}
+              name="checkedA"
+              inputProps={{ 'aria-label': 'secondary checkbox' }}
             />
-
-          </div>
-        );
-      }
-    );
+    )
 
     var elmGroupDiabetes: any = this.state.optionYesNo.map(
       (item: any, index: any) => {
@@ -1066,7 +1083,7 @@ class FormCalculatorRate extends Component<iProps, IState> {
         </div>
       })
     }
-
+    console.log(this.state.checkedA)
 
     return (
       <div className="container">

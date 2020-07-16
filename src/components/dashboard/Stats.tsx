@@ -56,23 +56,23 @@ class Stats extends Component<{}, IState> {
     })
   }
 
-  componentDidMount() {
+   componentDidMount() {
     let Arr = [];
     var data: any = [];
     // Bảng danh sách table 
-    axios.get('https://api.thevirustracker.com/free-api?countryTotals=ALL')
+   axios.get('https://api.thevirustracker.com/free-api?countryTotals=ALL')
       .then(res => {
         Arr = (Object.entries(res.data.countryitems[0]));
-        for (let i = 0; i < Arr.length; i++) {
-          let temArr = Arr[i];
-          data.push(temArr[1]);
-          // Thêm any trước khai báo một object để lấy tên trong json ***QUAN TRỌNG
-        }
-        // console.log(data);
-        this.setState({
-          data: data,
-          loading: false
-        })
+          for (let i = 0; i < Arr.length; i++) {
+            let temArr = Arr[i];
+            data.push(temArr[1]);
+          }
+          // console.log(data);
+          this.setState({
+            data: data,
+            loading: false
+          })
+        console.log(res.data)
       });
   }
 

@@ -112,13 +112,17 @@ class ResultConditionRadar extends Component<IProps, IState> {
       }
     }
     const options:any = {
+      width: 380,
+      chart: {
+        height: 400,
+        type: 'radar',
+      },
       series: [{
-        name: 'Series 1',
         data: dataSeries,
       }],
       plotOptions: {
         radar: {
-          // size: 150,
+          size: 140,
           polygons: {
             strokeColor: '#e8e8e8',
             fill: {
@@ -143,16 +147,37 @@ class ResultConditionRadar extends Component<IProps, IState> {
           size: 10
         }
       },
-      title: {
-        text: 'Basic Radar Chart'
-      },
+      // title: {
+      //   text: 'Basic Radar Chart'
+      // },
       xaxis: {
         categories: ['Group Age', 'Group Sex','Cardiovascular','Diabetes','Respiratory','Hypertension', 'Cancer']
       },
       yaxis:{
         min: 0,
         max: 40
-      }
+      },
+      responsive: [{
+        breakpoint: 1250,
+        options: {
+          chart:{
+            height: 330
+          },
+          plotOptions: {
+            radar: {
+              size: 110,
+              polygons: {
+                strokeColor: '#e8e8e8',
+                fill: {
+                    colors: ['#f8f8f8', '#fff']
+                }
+              }
+            }
+          },
+        }
+      },
+      
+    ]
     }
     
     return (
@@ -161,8 +186,7 @@ class ResultConditionRadar extends Component<IProps, IState> {
           options={options}
           series={options.series}
           type="radar"
-          width="100%"
-          height="600px"
+          height='330px'
         />
       </>
     );

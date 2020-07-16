@@ -7,8 +7,6 @@ import Map from "../mapDistribute/map";
 import Dashboard from "../dashboard/dashboard";
 import CalculatorRate from "../CalculatorRate/calculatorRate";
 import Wiki from "../Wiki/wiki";
-import understandingCovid19 from "../Wiki/understandingCovid19/understandingCovid19";
-import AskandQuestion from "../Wiki/AskedAndQuestion/AskedandQuestion";
 import Direction from "../Direction/Direction";
 import PageYoutubeNews from '../YoutubeNews/PageYoutubeNews';
 import TimeUpdate from './TimeUpdates';
@@ -164,7 +162,6 @@ class Menu extends Component<{}, IStates>{
                   </li>
                   <li>
                     <NavLink exact to="/Source" className="my-link" onClick={() => this.closeMenu(isOpen)}>
-                      {/* <i class="fa fa-font-awesome" aria-hidden="true"></i> */}
                       <FontAwesomeIcon icon={faRocket} size='1x' />  SOURCE
                     </NavLink>
                   </li>
@@ -173,17 +170,12 @@ class Menu extends Component<{}, IStates>{
             ) : <></>
           }
         </nav>
+        
         <Switch>
           <Route path="/" exact component={Dashboard} />
           <Route path="/map" exact component={Map} />
           <Route path="/calculatorRate" exact component={CalculatorRate} />
           <Route path="/wiki" exact component={Wiki} />
-          <Route
-            path="/wiki/Covid19Pandemic"
-            exact
-            component={understandingCovid19}
-          />
-          <Route path="/wiki/AskandQuestion" exact component={AskandQuestion} />
           <Route path="/direction" exact component={Direction} />
           <Route path="/youtubeNews" exact component={PageYoutubeNews} />
         </Switch>

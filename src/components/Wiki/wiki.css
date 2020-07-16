@@ -2,3 +2,253 @@
     z-index: 10000;
     background-color: white;
 }
+.content-wiki{
+    width: 100%;
+    padding: 0px 55px;
+    font-family: "VoltaModernText", Arial, Verdana, Tahoma, "DejaVu Sans", sans-serif;
+}
+.backgroundInfo{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+}
+.backgroundInfo img{
+    background-size: cover;
+    background-position: left;
+}
+.panel-box-info{
+    position: absolute;
+    top: 50%;
+    width: auto;
+    height: 225px;
+    background-color: #0460A9;
+    color: white;
+    padding: 60px 60px;
+}
+.panel-box-info .info1{
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+}
+.panel-box-info .info2{
+    font-size: 36px;
+    font-weight: 600;
+}
+@media only screen and (max-width:730px){
+    .content-wiki{
+        padding: 0px 10px;
+    }
+    .backgroundInfo{
+        height: 320px;
+    }
+    .panel-box-info{
+        width: 110%;
+        height: 100px;
+        padding-left: 35px;
+        padding-top: 20px;
+        margin-top: 0px;
+    }
+    .panel-box-info .info1{
+        font-size: 16px;
+    }
+    .panel-box-info .info2{
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width:730px) and (max-width: 1000px){
+    .content-wiki{
+        padding: 0px 40px;
+    }
+    .backgroundInfo{
+        height: 420px;
+    }
+    .panel-box-info{
+        height: 160px;
+        width: 110%;
+        padding-left: 40px;
+        padding-top: 40px;
+        top: 50%;
+    }
+    .panel-box-info .info1{
+        font-size: 20px;
+    }
+    .panel-box-info .info2{
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width:1000px) and (max-width:1140px){
+    .content-wiki{
+        padding: 0px 40px;
+    }
+    .backgroundInfo{
+        height: 650px;
+    }
+    .panel-box-info{
+        width: 110%;
+        padding-left: 60px;
+        padding-top: 70px;
+    }
+    .panel-box-info .info1{
+        font-size: 20px;
+    }
+    .panel-box-info .info2{
+        font-size: 30px;
+    }
+}
+/* Content Wiki */
+.contentWiki{
+    width: 100%;
+    padding: 0px 20px;
+}
+.loi-dan{
+    margin: 20px 0px;
+}
+.loi-dan p{
+    color: black;
+    font-weight: 400;
+    font-size: 2rem;
+}
+@media only screen and (max-width:960px){
+    .loi-dan{
+        margin: 0px 0px;
+    }
+}
+
+.image-corona{
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+.image-corona img,i{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.What-Covid{
+    width: 100%;
+}
+.border-what-covid{
+    background-color: cornsilk;
+    display: inline-block;
+    padding: 15px 0px;
+
+}
+.What-Covid p{
+    font-family: "VoltaModernText", Arial, Verdana, Tahoma, "DejaVu Sans", sans-serif;
+    font-size: 1.8rem;
+    color: black;
+}
+.content-what-corona, .image-corona{
+    /* padding: 25px 0px; */
+}
+
+/* Chart group */
+.group-chart-age, .group-chart-percent{
+    padding-top: 20px;
+    width: 100%;
+    background-color: cornsilk;
+    display: inline-block;
+    border: 1px solid rgba(165, 165, 165, 0.13);
+    margin-bottom: 30px
+}
+.title-chart{
+    padding-top: 150px;
+}
+.title-chart p{
+    font-family: "VoltaModernText", Arial, Verdana, Tahoma, "DejaVu Sans", sans-serif;
+    font-size: 1.8rem;
+    color: blue;
+    /* justify-content: center; */
+}
+@media only screen and (max-width: 1200px){
+    .title-chart{
+        padding-top: 0px;
+    }
+    .group-chart-age{
+        margin-top: 0px;
+    }
+}
+.title-data-pack {
+    margin-top: 30px;
+}
+.title-data-pack p{
+    font-family: "VoltaModernText", Arial, Verdana, Tahoma, "DejaVu Sans", sans-serif;
+    font-size: 50px;
+    color: black;
+    padding-left: 15px;
+}
+.title-data-pack p span{
+    background-color: orangered;
+    color: white;
+}
+@media only screen and (max-width: 1200px){
+    .title-data-pack p{
+        font-size: 40px;
+    }
+}
+.group-chart-condition, .group-chart-disease{
+    padding-top: 20px;
+    display: inline-block;
+    border: 1px solid wheat;
+    width: 100%;
+    margin-bottom: 30px
+}
+.group-chart-condition .title-chart p span{
+    color: orangered;
+}
+.title-chart .name-condition-sick{
+    color: orangered;
+    font-family: "VoltaModernText", Arial, Verdana, Tahoma, "DejaVu Sans", sans-serif;
+    font-size: 15px;
+}
+
+/* Preventions */
+.contents-prevent,.risk-activity{
+    display: inline-block;
+    margin: 0px;
+    padding: 10px;
+    background-color: rgb(241, 245, 248);
+}
+.washing{
+    border:1px solid rgb(218, 228, 254);
+    display: inline-block;
+    height: 270px;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 15px;
+}
+.icon-prevention{
+    position: relative;
+    height: 40%;
+    padding-top: 18px;
+    /* color: #0460A9; */
+    color: #007c91;
+}
+.mg-15{
+    margin: 10px 0px;
+}
+.content-prevention{
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "VoltaModernText", Arial, Verdana, Tahoma, "DejaVu Sans", sans-serif;
+    color: #0460A9;
+}
+.detail-prevention{
+    /* font-size: 16px; */
+}
+/* MyIframe */
+.iframe{
+    height: 890px;
+}
+.risk-activity{
+    width: 100%;
+    height: 100%;
+}
+#myIFrame{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
