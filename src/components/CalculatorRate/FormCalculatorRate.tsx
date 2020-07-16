@@ -12,6 +12,8 @@ import {
   faLungs,
   faStethoscope,
   faAllergies,
+  faMapMarkedAlt,
+  faUserFriends,
 } from "@fortawesome/free-solid-svg-icons";
 import { render } from "react-dom";
 
@@ -31,7 +33,6 @@ interface IState {
   Respiratory: any;
   Hypertension: any;
   Cancer: any;
-  optionYesNo: any;
   data: any;
   isSubmit: any;
   CountryOption: any;
@@ -57,7 +58,6 @@ class FormCalculatorRate extends Component<iProps, IState> {
         "groupAge6",
       ],
       nameSex: ["Male", "Female"],
-      optionYesNo: ["Yes", "No"],
       data: [],
       isSubmit: false,
       CountryOption: "AF",
@@ -67,17 +67,7 @@ class FormCalculatorRate extends Component<iProps, IState> {
   onHandleSubmit = (event: any) => {
     event.preventDefault();
     this.props.isSubmit(this.state.isSubmit);
-    // console.log(
-    //   this.state.groupAge,
-    //   this.state.groupSex,
-    //   this.state.Cardiovascular,
-    //   this.state.Diabetes,
-    //   this.state.Respiratory,
-    //   this.state.Hypertension,
-    //   this.state.Cancer,
-    //   this.state.Stroke,
-    //   this.state.Heart
-    // );
+    
   };
   // Bắt sự kiện khi Click thì gửi toàn bộ dữ liệu State về thằng cha calculatorRate
   onClick = () => {
@@ -111,7 +101,6 @@ class FormCalculatorRate extends Component<iProps, IState> {
   handleChange = (event: any) => {
     // console.log(event.target.value)
     // this.setState({ CountryOption: event.target.value })
-    console.log(event.value);
     this.setState({ CountryOption: event.value })
   }
   handleChangeSwitchCardiovascular(value:any){
@@ -150,6 +139,19 @@ class FormCalculatorRate extends Component<iProps, IState> {
       groupSex: event.target.name,
     });
   };
+  renderClassCheckCondition(value:any)
+  {
+    if(value ===true){
+      return "checkCondition"
+    }
+    else return "unCheckCondition"
+  }
+  renderClassUnCheckCondition(value:any){
+    if(value ===false){
+      return "checkCondition"
+    }
+    else return "unCheckCondition"
+  }
   render() {
     function renderFlagImage(flag: any) {
       var temp: any = 'https://cdn.jsdelivr.net/gh/hjnilsson/country-flags@latest/svg/' + flag.toLocaleLowerCase() + '.svg';
@@ -914,7 +916,7 @@ class FormCalculatorRate extends Component<iProps, IState> {
         "100+",
       ];
       return (
-        <div className="col-xs-4 col-sm-4 col-md-4 col-lg-2" key={index}>
+        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-2 group-input" key={index}>
           <input
             className={
               this.state.groupAge === item
@@ -934,7 +936,7 @@ class FormCalculatorRate extends Component<iProps, IState> {
     var elmGroupSex: any = this.state.nameSex.map((item: any, index: any) => {
       var lblTenSex: any = ["Male", "Female"];
       return (
-        <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6" key={index}>
+        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 group-input" key={index}>
           <input
             className={
               this.state.groupSex === item
@@ -951,59 +953,62 @@ class FormCalculatorRate extends Component<iProps, IState> {
     });
 
     var elmGroupCardiovascular :any = (
-      <div>
-        No <Switch
+      <div className="switch-condition">
+        <span className={this.renderClassUnCheckCondition(this.state.Cardiovascular)}>No</span> <Switch
               checked={this.state.Cardiovascular}
               onChange={() => this.handleChangeSwitchCardiovascular(this.state.Cardiovascular)}
               name="checkedA"
               inputProps={{ 'aria-label': 'secondary checkbox' }}
-            /> Yes
+            /> <span className={this.renderClassCheckCondition(this.state.Cardiovascular)}>Yes</span>
       </div>
     )
 
     var elmGroupDiabetes: any = (
       
-      <div>
-        No <Switch
+      <div className="switch-condition">
+        <span className={this.renderClassUnCheckCondition(this.state.Diabetes)}>No</span> <Switch
               checked={this.state.Diabetes}
               onChange={() => this.handleChangeSwitchDiabetes(this.state.Diabetes)}
               name="checkedA"
               inputProps={{ 'aria-label': 'secondary checkbox' }}
             />
-            Yes
+            <span className={this.renderClassCheckCondition(this.state.Diabetes)}>Yes</span>
       </div>
     )
 
     var elmGroupRespiratory: any = (
-      <div>
-        No <Switch
+      <div className="switch-condition">
+        <span className={this.renderClassUnCheckCondition(this.state.Respiratory)}>No</span> <Switch
               checked={this.state.Respiratory}
               onChange={() => this.handleChangeSwitchRespiratory(this.state.Respiratory)}
               name="checkedA"
               inputProps={{ 'aria-label': 'secondary checkbox' }}
-            /> Yes
+            />  
+            <span className={this.renderClassCheckCondition(this.state.Respiratory)}>Yes</span>
       </div>
     )
 
     var elmGroupHypertension: any = (
-      <div>
-        No <Switch
+      <div className="switch-condition">
+         <span className={this.renderClassUnCheckCondition(this.state.Hypertension)}>No</span> <Switch
               checked={this.state.Hypertension}
               onChange={() => this.handleChangeSwitchHypertension(this.state.Hypertension)}
               name="checkedA"
               inputProps={{ 'aria-label': 'secondary checkbox' }}
-            /> Yes
+            />
+            <span className={this.renderClassCheckCondition(this.state.Hypertension)}>Yes</span>
       </div>
     )
 
     var elmGroupCancer: any =(
-      <div>
-        No <Switch
+      <div className="switch-condition">
+        <span className={this.renderClassUnCheckCondition(this.state.Cancer)}>No</span> <Switch
               checked={this.state.Cancer}
               onChange={() => this.handleChangeSwitchCancer(this.state.Cancer)}
               name="checkedA"
               inputProps={{ 'aria-label': 'secondary checkbox' }}
-            /> Yes
+            /> 
+            <span className={this.renderClassCheckCondition(this.state.Cancer)}>Yes</span>
       </div>
     )
 
@@ -1016,28 +1021,26 @@ class FormCalculatorRate extends Component<iProps, IState> {
         </div>
       })
     }
-    console.log(this.state.Cardiovascular)
 
     return (
       <div className="container">
-        <div className="row">
+        <div className="row form-parent">
           <form onSubmit={this.onHandleSubmit}>
             <div className="page">
 
               <div className="title-form">
                 <p className="p-title">
                   <FontAwesomeIcon icon={faLungsVirus} /> COVID-19 Prognostic Tool
-
                 </p>
                 <p className="p-note">
                   <FontAwesomeIcon icon={faFlagCheckered} size="2x" /> Please answer all questions. The results will be computed once all questions are answered.
                 </p>
               </div>
 
-              <div className="col-12 group-survey">
+              <div className="col-12 group-survey country">
                 <div>
-                  <div className="lbl-tile-group">
-                    <p>Where are you from?</p>
+                  <div className="col-12 lbl-tile-group">
+                    <p><FontAwesomeIcon icon={faMapMarkedAlt} size="2x" /> Where are you from?</p>
                   </div>
                   <div className="content-survey-group">
                     {/* <select onChange={this.handleChange} value={this.state.CountryOption}>
@@ -1069,21 +1072,20 @@ class FormCalculatorRate extends Component<iProps, IState> {
                     </FormControl> */}
 
                     <Select
+                      className="select-country" 
                       defaultValue={Countries[0]}
                       options={Countries}
                       onChange={this.handleChange}
                     // formatOptionLabel={formatOptionLabel}
                     />
-
-
                   </div>
                 </div>
               </div>
 
               <div className="col-12 group-survey">
                 <div>
-                  <div className="lbl-tile-group">
-                    <p>Group Age?</p>
+                  <div className="col-12 lbl-tile-group">
+                    <p className="age"><FontAwesomeIcon icon={faUserFriends} size="2x"/> Group Age?</p>
                   </div>
                   <div className="content-survey-group">
                     {elmGroupAge}
@@ -1093,8 +1095,8 @@ class FormCalculatorRate extends Component<iProps, IState> {
 
               <div className="col-12 group-survey">
                 <div>
-                  <div className="lbl-tile-group">
-                    <p><FontAwesomeIcon icon={faRestroom} size="2x" /> Group Sex?</p>
+                  <div className="col-12 lbl-tile-group">
+                    <p className="sex"><FontAwesomeIcon icon={faRestroom} size="2x" /> Group Sex?</p>
                   </div>
                   <div className="content-survey-group">
                     {elmGroupSex}
@@ -1104,8 +1106,8 @@ class FormCalculatorRate extends Component<iProps, IState> {
 
               <div className="col-12 group-survey">
                 <div>
-                  <div className="lbl-tile-group">
-                    <p><FontAwesomeIcon icon={faHeartbeat} size="2x" /> Cardiovascular Disease?</p>
+                  <div className="col-12 lbl-tile-group">
+                    <p className="Cardiovascular"><FontAwesomeIcon icon={faHeartbeat} size="2x" /> Cardiovascular Disease?</p>
                   </div>
                   <div className="content-survey-group">
                     {elmGroupCardiovascular}
@@ -1115,7 +1117,7 @@ class FormCalculatorRate extends Component<iProps, IState> {
 
               <div className="col-12 group-survey">
                 <div>
-                  <div className="lbl-tile-group">
+                  <div className="col-12 lbl-tile-group">
                     <p><FontAwesomeIcon icon={faToilet} size="2x" /> Diabetes?</p>
                   </div>
                   <div className="content-survey-group">
@@ -1126,7 +1128,7 @@ class FormCalculatorRate extends Component<iProps, IState> {
 
               <div className="col-12 group-survey">
                 <div>
-                  <div className="lbl-tile-group">
+                  <div className="col-12 lbl-tile-group">
                     <p><FontAwesomeIcon icon={faLungs} size="2x" /> Chronic Respiratory Disease?</p>
                   </div>
                   <div className="content-survey-group">
@@ -1137,7 +1139,7 @@ class FormCalculatorRate extends Component<iProps, IState> {
 
               <div className="col-12 group-survey">
                 <div>
-                  <div className="lbl-tile-group">
+                  <div className="col-12 lbl-tile-group">
                     <p><FontAwesomeIcon icon={faStethoscope} size="2x" /> Hypertension?</p>
                   </div>
                   <div className="content-survey-group">
@@ -1148,7 +1150,7 @@ class FormCalculatorRate extends Component<iProps, IState> {
 
               <div className="col-12 group-survey">
                 <div>
-                  <div className="lbl-tile-group">
+                  <div className="col-12 lbl-tile-group">
                     <p><FontAwesomeIcon icon={faAllergies} size="2x" /> Cancer?</p>
                   </div>
                   <div className="content-survey-group">

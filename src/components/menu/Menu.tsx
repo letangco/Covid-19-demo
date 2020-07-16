@@ -7,7 +7,6 @@ import Map from "../mapDistribute/map";
 import Dashboard from "../dashboard/dashboard";
 import CalculatorRate from "../CalculatorRate/calculatorRate";
 import Wiki from "../Wiki/wiki";
-import Direction from "../Direction/Direction";
 import PageYoutubeNews from '../YoutubeNews/PageYoutubeNews';
 import TimeUpdate from './TimeUpdates';
 import { TinyButton as ScrollUpButton } from "react-scroll-up-button";
@@ -80,56 +79,56 @@ class Menu extends Component<{}, IStates>{
           <div id="navbar4" className="navbar-collapse collapse">
             <ul className="nav navbar-nav">
               <li className="active">
-                <NavLink exact to="/" className="my-link">
-                  <FontAwesomeIcon icon={faChartLine} size="2x" /> DASHBOARD
-                    </NavLink>
-              </li>
-
-              <li className="active">
-                <NavLink exact to="/map" className="my-link">
-                  <FontAwesomeIcon icon={faGlobeAmericas} size="2x" /> MAP
-                </NavLink>
-              </li>
-              <li className="active">
                 <NavLink
                   exact
-                  to="/calculatorRate"
+                  to="/"
                   className="my-link"
                 >
                   <FontAwesomeIcon icon={faVial} size="2x" /> CALCULATOR RATE
                 </NavLink>
               </li>
               <li className="active">
-                <NavLink exact to="/direction" className="my-link">
-                  <FontAwesomeIcon icon={faRoute} size="2x" /> DIRECTION
+                <NavLink exact to="/wiki" className="my-link">
+                  <FontAwesomeIcon icon={faBookMedical} size="2x" /> WIKI
                     </NavLink>
               </li>
               <li className="active">
-                <NavLink exact to="/wiki" className="my-link">
-                  <FontAwesomeIcon icon={faBookMedical} size="2x" /> WIKI COVID 19
+                <NavLink exact to="/map" className="my-link">
+                  <FontAwesomeIcon icon={faGlobeAmericas} size="2x" /> MAP
+                </NavLink>
+              </li>
+
+              <li className="active">
+                <NavLink exact to="/dashboard" className="my-link">
+                  <FontAwesomeIcon icon={faChartLine} size="2x" /> DASHBOARD
                     </NavLink>
               </li>
+
               <li className="active">
                 <NavLink exact to="/youtubeNews" className="my-link">
                   <FontAwesomeIcon icon={faVideo} size='2x' />  NEWS
                     </NavLink>
               </li>
-              <li className="active">
-                <NavLink exact to="/Source" className="my-link">
-                  <FontAwesomeIcon icon={faRocket} size='2x' />  SOURCE
-                    </NavLink>
-              </li>
               <li className="txt-updates"><TimeUpdate /></li>
             </ul>
-
           </div>
           {
             (isOpen === true) ? (
               <div className="menu-responsive">
                 <ul>
                   <li>
-                    <NavLink exact to="/" className="my-link" onClick={() => this.closeMenu(isOpen)}>
-                      <FontAwesomeIcon icon={faChartLine} size="1x" /> DASHBOARD
+                    <NavLink
+                      exact
+                      to="/"
+                      className="my-link"
+                      onClick={() => this.closeMenu(isOpen)}
+                    >
+                      <FontAwesomeIcon icon={faVial} size="1x" /> CALCULATOR RATE
+                </NavLink>
+                  </li>
+                  <li>
+                    <NavLink exact to="/wiki" className="my-link" onClick={() => this.closeMenu(isOpen)}>
+                      <FontAwesomeIcon icon={faBookMedical} size="1x" /> WIKI
                     </NavLink>
                   </li>
                   <li>
@@ -138,21 +137,8 @@ class Menu extends Component<{}, IStates>{
                 </NavLink>
                   </li>
                   <li>
-                    <NavLink
-                      exact
-                      to="/calculatorRate"
-                      className="my-link"
-                      onClick={() => this.closeMenu(isOpen)}
-                    >
-                      <FontAwesomeIcon icon={faVial} size="1x" /> CALCULATOR RATE
-                </NavLink>
-                  </li>
-                  <li><NavLink exact to="/direction" className="my-link" onClick={() => this.closeMenu(isOpen)}>
-                    <FontAwesomeIcon icon={faRoute} size="1x" /> DIRECTION
-                    </NavLink></li>
-                  <li>
-                    <NavLink exact to="/wiki" className="my-link" onClick={() => this.closeMenu(isOpen)}>
-                      <FontAwesomeIcon icon={faBookMedical} size="1x" /> WIKI COVID 19
+                    <NavLink exact to="/dashboard" className="my-link" onClick={() => this.closeMenu(isOpen)}>
+                      <FontAwesomeIcon icon={faChartLine} size="1x" /> DASHBOARD
                     </NavLink>
                   </li>
                   <li>
@@ -160,28 +146,21 @@ class Menu extends Component<{}, IStates>{
                       <FontAwesomeIcon icon={faVideo} size='1x' />  NEWS
                     </NavLink>
                   </li>
-                  <li>
-                    <NavLink exact to="/Source" className="my-link" onClick={() => this.closeMenu(isOpen)}>
-                      <FontAwesomeIcon icon={faRocket} size='1x' />  SOURCE
-                    </NavLink>
-                  </li>
+                  
                 </ul>
               </div>
             ) : <></>
           }
         </nav>
-        
         <Switch>
-          <Route path="/" exact component={Dashboard} />
+          <Route path="/" exact component={CalculatorRate} />
           <Route path="/map" exact component={Map} />
-          <Route path="/calculatorRate" exact component={CalculatorRate} />
+          <Route path="/dashboard" exact component={Dashboard} />
           <Route path="/wiki" exact component={Wiki} />
-          <Route path="/direction" exact component={Direction} />
           <Route path="/youtubeNews" exact component={PageYoutubeNews} />
         </Switch>
       </Router>
     );
   }
 }
-
 export default Menu;

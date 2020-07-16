@@ -1,5 +1,8 @@
 import React from 'react';
-
+import { TextField } from '@material-ui/core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faSearch} from '@fortawesome/free-solid-svg-icons';
+import './style/video.css';
 interface IState {
     term: any;
 }
@@ -26,12 +29,16 @@ class SearchBar extends React.Component<IProps, IState> {
     render() {
         return (
             <>
-                <h2 style={{ textAlign: "center" }}><img style={{ width: '200px', height: '100px', justifyContent: 'center' }} src='https://www.thatitguy.net/wp-content/uploads/2018/08/1280px-Logo_of_YouTube_2015-2017.svg.png' alt="youtube logo"></img></h2>
                 <div className='search-bar ui segment'>
                     <form onSubmit={this.handleSubmit} className='ui form'>
+                        
                         <div className='field'>
-                            <label htmlFor="video-search">Video Search</label>
-                            <input onChange={this.handleChange} name='video-search' width="200px" type="text" placeholder="Search.." />
+                            <p>
+                                <FontAwesomeIcon icon={faSearch} size="2x"/>
+                            </p>
+                            <div>
+                            <TextField id="outlined-basic" name='video-search' className="input-search" variant="outlined" onChange={this.handleChange}/>
+                            </div>
                         </div>
                     </form>
                 </div>

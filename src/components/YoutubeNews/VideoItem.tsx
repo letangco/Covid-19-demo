@@ -14,8 +14,8 @@ class VideoItem extends React.Component<IProps, any>{
         var handleVideoSelect: any = this.props.handleVideoSelect;
         const VideoItem = (video: any, handleVideoSelect: any) => {
             return (
-                <div onClick={() => handleVideoSelect(video)} className=' video-item item'>
-                    <img className='ui image' src={video.snippet.thumbnails.medium.url} alt={video.snippet.description} />
+                <div onClick={() => handleVideoSelect(video)} className='video-item-list item'>
+                    <img className='ui image' src={video.snippet.thumbnails.medium.url} alt={video.snippet.description} width="100%"/>
                     <div className='content'>
                         <div className='header '>{video.snippet.title}</div>
                     </div>

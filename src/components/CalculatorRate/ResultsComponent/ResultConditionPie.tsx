@@ -15,7 +15,6 @@ class ResultConditionPie extends Component<IProps, IState> {
     }
     render() {
         var dataCondition: any = this.props.sendDataCondition;
-        console.log(dataCondition)
         var dataSeries: any = [];
         // Dieu kien Group Age
         switch (dataCondition[0]) {

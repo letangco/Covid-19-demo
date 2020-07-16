@@ -1,25 +1,42 @@
+.form-parent{
+    padding: 0px 50px;
+}
 .page{
-    background: #4b5a81;
-    /* background-color: #1B2435; */
-    margin-top: 50px;
+    /* background: #4b5a81; */
+    background-color: white;
+    margin-top: 30px;
     border-radius: 20px;
     text-align: center;
 }
 .itemNew{
     background-color: #445175;
-    font-size: 1rem;
-    height: 60px;
+    font-size: 20px;
+    height: 55px;
     padding-top: 1rem !important;
     padding-bottom:1rem !important;
     outline: none;
+    color: white;
     border: none;
     border-radius: 15px !important;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family: "VoltaModernText", Arial, Verdana, Tahoma, "DejaVu Sans", sans-serif;
+}
+.group-input input{
+    margin-top: 5px;
+}
+.group-survey .content-survey-group{
+    margin: 5px 30px;
+}
+.country{
+    margin: 0 auto;
+}
+.country .content-survey-group {
+    width: 70%;
+    margin: 0 auto;
 }
 .page .title-form p{
     font-family: sans-serif;
     text-align: center;
-    color: ivory;
+    color: #1F2667;
     /* letter-spacing: -1px; */
 
 }
@@ -33,29 +50,29 @@
     color: rgb(243, 83, 83);
     letter-spacing: 1px;
 }
-.list-group-item{
-    margin: 0px !important;
-}
+
 .active_Form_Cal{
     background-color: #43ca54;
     width: 100%;
-}
-.group-survey{
-    min-height: 90px;
-    overflow: visible;
+    color: black;
+    font-weight: 600;
 }
 .lbl-tile-group  p{
     margin: 0px;
-    color: white;
+    color: #1F2667;
     padding-left: 20px;
     font-size: large;
-    padding-top: 0px;
     text-align: left;
-    margin-top: 25px;
+    /* margin-top: 30px; */
 }
-.content-survey-group div{
-    margin-top: 8px;
-    margin-bottom: 5px;
+.lbl-tile-group .age{
+    margin-top: 15px;
+}
+.lbl-tile-group .sex{
+    margin-top: 80px;
+}
+.lbl-tile-group .Cardiovascular{
+    margin-top: 80px;
 }
 .box-btn-check{
     width: 96%;
@@ -66,15 +83,18 @@
     margin-top: 20px;
     border-radius: 15px;
 }
-@media only screen and (max-width: 765px)
+@media only screen and (max-width: 960px)
 {
+    .form-parent{
+        padding: 0px;
+    }
   .page{
     margin: 30px 20px;
     border-radius: 20px;
     text-align: center;
   }
   .list-group-item{
-      font-size: 12px !important;
+      font-size: 20px;
       padding: 5px 8px;
 }
     .p-note{
@@ -84,7 +104,7 @@
 }
 
 /* CSS SlectBox Choose Country */
-.SelectBoxCountry{
+/* .SelectBoxCountry{
     width: 75%;
     height: 100%;
 }
@@ -126,4 +146,22 @@
         font-size: 15px !important;
         padding-left: 5px !important;
     }
-  }
+  } */
+.select-country{
+    color: #091268;
+    font-size: 18px;
+    padding: 20px 0px;
+}
+.switch-condition{
+    font-size: 20px;
+    color: #091268;
+    font-family: "VoltaModernText", Arial, Verdana, Tahoma, "DejaVu Sans", sans-serif;
+    font-weight: 400;
+}
+.checkCondition{
+    color: #43ca54;
+    font-weight: 600;
+}
+.unCheckCondition{
+    background-color: white;
+}

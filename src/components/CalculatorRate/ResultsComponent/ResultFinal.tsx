@@ -106,7 +106,7 @@ class ResultFinal extends Component<IProps, IState> {
       valueDiabetes +
       valueRespiratory +
       valueHypertension +
-      valueCancer).toFixed(2);
+      valueCancer+1).toFixed(2);
       console.log(ResultCondition)
     ResultFinal =
       (ResultCondition*ResultCountry).toFixed(2);
@@ -114,7 +114,7 @@ class ResultFinal extends Component<IProps, IState> {
     function returnResut() {
       // ResultFinal = Math.round(ResultFinal * 1000) / 1000;
       console.log(ResultFinal)
-      if (ResultFinal >= 0 && ResultFinal < 7) {
+      if (ResultFinal >= 0 && ResultFinal < 5) {
         return (
           <div className="panel-notice-result-fine">
             <p className="notice-result-fine">You should be fine</p>
@@ -129,7 +129,7 @@ class ResultFinal extends Component<IProps, IState> {
           </div>
         );
       }
-      else if (ResultFinal >= 7 && ResultFinal < 8.5) {
+      else if (ResultFinal >= 5 && ResultFinal < 8) {
         return (
           <div className="panel-notice-result-warning">
             <p className="notice-result-warning">Take extra precautions</p>
@@ -144,7 +144,7 @@ class ResultFinal extends Component<IProps, IState> {
           </div>
         );
       }
-      else if (ResultFinal >= 8.5) {
+      else if (ResultFinal >= 8) {
         return (
           <div className="panel-notice-result-danger">
             <p className="notice-result-danger">You are at risk</p>

@@ -6,6 +6,7 @@
     width: 100%;
     padding: 0px 55px;
     font-family: "VoltaModernText", Arial, Verdana, Tahoma, "DejaVu Sans", sans-serif;
+    background-image: linear-gradient(to right, #f5f7fa , #c3cfe2);
 }
 .backgroundInfo{
     background-repeat: no-repeat;
@@ -153,8 +154,12 @@
     border: 1px solid rgba(165, 165, 165, 0.13);
     margin-bottom: 30px
 }
+.group-chart-age{
+    height: 100%;
+}
 .title-chart{
-    padding-top: 150px;
+    height: 100%;
+    padding-top: 220px;
 }
 .title-chart p{
     font-family: "VoltaModernText", Arial, Verdana, Tahoma, "DejaVu Sans", sans-serif;

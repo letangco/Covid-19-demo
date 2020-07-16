@@ -3,6 +3,9 @@ import SearchBar from './Searchbar';
 import youtube from '../../api/YoutubeNews/youtube';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetails';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faPhotoVideo} from '@fortawesome/free-solid-svg-icons';
+import './style/video.css';
 class PageYoutubeNews extends React.Component {
     state = {
         videos: [],
@@ -13,7 +16,7 @@ class PageYoutubeNews extends React.Component {
         let  response: any = await youtube.get('/search', {
             params: {
                 part: 'snippet',
-                maxResults: 1,
+                maxResults: 3,
                 key: 'AIzaSyBqqdiP7gxBFVf69_gmlJKlKv2RtBTCV1A',
                 q: "covid"
             }
@@ -26,7 +29,7 @@ class PageYoutubeNews extends React.Component {
         let response: any = await youtube.get('/search', {
             params: {
                 part: 'snippet',
-                maxResults: 1,
+                maxResults: 3,
                 key: 'AIzaSyBqqdiP7gxBFVf69_gmlJKlKv2RtBTCV1A',
                 q: termFromSearchBar
             }
@@ -40,21 +43,28 @@ class PageYoutubeNews extends React.Component {
     }
     render() {
         return (
-            <div className='ui container' style={{ marginTop: '1em' }}>
+            <div className='container-fluid page-youtube-News'>
                 
-                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center title-page-news">
+                    <p>
+                        <FontAwesomeIcon icon={faPhotoVideo} /> COVID-19 NEWS
+                    </p>
                     <SearchBar handleFormSubmit={this.handleSubmit} />
                 </div>
                 
-                <div className='ui grid'>
-                    <div className="ui row">
+                <div className=''>
+                    <div className="">
                         
                         <div className="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                            <div className="video-details">
                             <VideoDetail video={this.state.selectedVideo}/>
+                            </div>
                         </div>
                         
                         <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <div className="video-items">
                             <VideoList handleVideoSelect={this.handleVideoSelect} videos={this.state.videos}/>
+                            </div>
                         </div>
                     </div>
                 </div>

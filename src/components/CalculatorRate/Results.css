@@ -1,12 +1,15 @@
 .valueResult{
-    color: darkred;
-    font-weight: bold;
-    font-size: 18px;
+    color: black;
+    font-size: 16px;
+}
+.result-parent{
+    padding: 0px 65px;
 }
 .page-result-survey{
     border-radius: 20px;
     margin-top: 30px;
     background-color: #4b5a81;
+    /* background-color: white; */
     padding: 20px 50px;
 }
 .page-result-survey .title-result{
@@ -16,7 +19,7 @@
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
-    color: ivory;
+    color: white;
 }
 .txt-read-more{
     text-align: center;
@@ -29,7 +32,7 @@
     font-size: 20px;
     font-weight: bold;
 }
-@media only screen and (max-width: 765px)
+@media only screen and (max-width: 960px)
 {
   .page-result-survey{
     margin: 10px 5px !important;
@@ -37,6 +40,12 @@
     border-radius: 20px;
     text-align: center;
   }
-  
+  .result-parent{
+    padding: 10px 20px 0px 10px;
 }
+.page-result-survey .title-result{
+    font-size: 30px;
+}
+}
+
 

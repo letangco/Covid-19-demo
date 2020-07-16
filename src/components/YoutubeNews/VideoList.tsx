@@ -16,7 +16,6 @@ class VideoList extends React.Component<IProps, any>{
                 return <VideoItem key={video.id.videoId} video={video} handleVideoSelect={handleVideoSelect} />
                 // console.log(video.id);
             });
-        
             return <div className='ui relaxed divided list'>{renderedVideos}</div>;
         };
         return (

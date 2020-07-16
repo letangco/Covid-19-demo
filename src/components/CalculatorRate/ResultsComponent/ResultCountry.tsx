@@ -5,22 +5,21 @@ interface IProps {
     sendSourceCountry: any;
 }
 interface IState {
-    confirmedCountry:any;
-    deathCountry:any;
-    resultFinalCountry:any;
+    confirmedCountry: any;
+    deathCountry: any;
+    resultFinalCountry: any;
 }
 class ResultCountry extends Component<IProps, IState> {
-    constructor(props:IProps){
+    constructor(props: IProps) {
         super(props);
-        this.state={
-            resultFinalCountry:2.89,
-            deathCountry:994,
-            confirmedCountry:34366
+        this.state = {
+            resultFinalCountry: 2.89,
+            deathCountry: 994,
+            confirmedCountry: 34366
         }
     }
     render() {
         var Country: any = this.props.sendCountry;
-        console.log(Country)
         var SourceCountry: any = this.props.sendSourceCountry;
         // console.log(valueResultFinalCountry)
         function RenderResultCountry() {
@@ -30,14 +29,11 @@ class ResultCountry extends Component<IProps, IState> {
                         <div className="panel-heading">
                             <h3 className="panel-title">I'm from {SourceCountry[i].Country}</h3>
                         </div>
-                        <div className="panel panel-warning mg-20">
-                            <div className="panel-heading pd-25">
-                                <h3 className="panel-title">
-                                Sources: covid-19-coronavirus-infographic-datapack, our world in data, cov19
-                      </h3>
+                        <div className="mg-20">
+                            <div className="pd-25">
                                 <p className="valueResult">Total Confirmed: {SourceCountry[i].TotalConfirmed}</p>
                                 <p className="valueResult">Total Deaths: {SourceCountry[i].TotalDeaths}</p>
-                                <p className="valueResult">Result: {(SourceCountry[i].TotalDeaths!==0)?(parseFloat(SourceCountry[i].TotalDeaths)/parseFloat(SourceCountry[i].TotalConfirmed)*100).toFixed(4): (<><img src ={Approximately} width="20px"/>0</>)}%</p>
+                                <p className="valueResult">Result: {(SourceCountry[i].TotalDeaths !== 0) ? (parseFloat(SourceCountry[i].TotalDeaths) / parseFloat(SourceCountry[i].TotalConfirmed) * 100).toFixed(4) : (<><img src={Approximately} width="20px" />0</>)}%</p>
                             </div>
                         </div>
                     </div>
