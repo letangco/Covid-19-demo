@@ -6,6 +6,7 @@ import ChartStats from './ChartDashBoard/ChartStats';
 import PieChartStats from './ChartDashBoard/PieChartStats';
 import MapVietNam from '../mapDistribute/mapVietNam';
 import { TinyButton as ScrollUpButton } from "react-scroll-up-button";
+import { CircularProgress } from '@material-ui/core';
 interface IProps {
 
 }
@@ -51,7 +52,14 @@ class Dashboard extends Component {
                 {/* <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4">
                     <MapVietNam />
                 </div>  */}
-                
+                {/* <div className="container text-center">
+                    <div className="panel panel-info text-center" style={{marginTop:"50px"}}>
+                        <div className="panel-heading text-center"><h1>Notification</h1></div>
+                        <div className="panel-body text-center">
+                        <CircularProgress color="secondary"/><h3>The system is updating the data, please try again later.</h3></div>
+                    </div>
+                    
+                </div> */}
 
             </div>
         );

@@ -16,6 +16,7 @@ import {
   faUserFriends,
 } from "@fortawesome/free-solid-svg-icons";
 import { render } from "react-dom";
+import { Button } from "@material-ui/core";
 
 // import { FormControl, InputLabel, Select, MenuItem } from "@material-ui/core";
 
@@ -67,7 +68,7 @@ class FormCalculatorRate extends Component<iProps, IState> {
   onHandleSubmit = (event: any) => {
     event.preventDefault();
     this.props.isSubmit(this.state.isSubmit);
-    
+
   };
   // Bắt sự kiện khi Click thì gửi toàn bộ dữ liệu State về thằng cha calculatorRate
   onClick = () => {
@@ -103,30 +104,29 @@ class FormCalculatorRate extends Component<iProps, IState> {
     // this.setState({ CountryOption: event.target.value })
     this.setState({ CountryOption: event.value })
   }
-  handleChangeSwitchCardiovascular(value:any){
+  handleChangeSwitchCardiovascular(value: any) {
     this.setState({
       Cardiovascular: !value,
     })
   }
-  handleChangeSwitchDiabetes(value:any ){
+  handleChangeSwitchDiabetes(value: any) {
     this.setState({
-      Diabetes:!value
+      Diabetes: !value
     })
   }
-  handleChangeSwitchRespiratory(value:any)
-  {
+  handleChangeSwitchRespiratory(value: any) {
     this.setState({
-      Respiratory:!value
+      Respiratory: !value
     })
   }
-  handleChangeSwitchHypertension(value:any){
+  handleChangeSwitchHypertension(value: any) {
     this.setState({
-      Hypertension:!value
+      Hypertension: !value
     })
   }
-  handleChangeSwitchCancer(value:any ){
+  handleChangeSwitchCancer(value: any) {
     this.setState({
-      Cancer:!value
+      Cancer: !value
     })
   }
   onHandleClickAge = (event: any) => {
@@ -139,15 +139,14 @@ class FormCalculatorRate extends Component<iProps, IState> {
       groupSex: event.target.name,
     });
   };
-  renderClassCheckCondition(value:any)
-  {
-    if(value ===true){
+  renderClassCheckCondition(value: any) {
+    if (value === true) {
       return "checkCondition"
     }
     else return "unCheckCondition"
   }
-  renderClassUnCheckCondition(value:any){
-    if(value ===false){
+  renderClassUnCheckCondition(value: any) {
+    if (value === false) {
       return "checkCondition"
     }
     else return "unCheckCondition"
@@ -952,64 +951,64 @@ class FormCalculatorRate extends Component<iProps, IState> {
       );
     });
 
-    var elmGroupCardiovascular :any = (
+    var elmGroupCardiovascular: any = (
       <div className="switch-condition">
         <span className={this.renderClassUnCheckCondition(this.state.Cardiovascular)}>No</span> <Switch
-              checked={this.state.Cardiovascular}
-              onChange={() => this.handleChangeSwitchCardiovascular(this.state.Cardiovascular)}
-              name="checkedA"
-              inputProps={{ 'aria-label': 'secondary checkbox' }}
-            /> <span className={this.renderClassCheckCondition(this.state.Cardiovascular)}>Yes</span>
+          checked={this.state.Cardiovascular}
+          onChange={() => this.handleChangeSwitchCardiovascular(this.state.Cardiovascular)}
+          name="checkedA"
+          inputProps={{ 'aria-label': 'secondary checkbox' }}
+        /> <span className={this.renderClassCheckCondition(this.state.Cardiovascular)}>Yes</span>
       </div>
     )
 
     var elmGroupDiabetes: any = (
-      
+
       <div className="switch-condition">
         <span className={this.renderClassUnCheckCondition(this.state.Diabetes)}>No</span> <Switch
-              checked={this.state.Diabetes}
-              onChange={() => this.handleChangeSwitchDiabetes(this.state.Diabetes)}
-              name="checkedA"
-              inputProps={{ 'aria-label': 'secondary checkbox' }}
-            />
-            <span className={this.renderClassCheckCondition(this.state.Diabetes)}>Yes</span>
+          checked={this.state.Diabetes}
+          onChange={() => this.handleChangeSwitchDiabetes(this.state.Diabetes)}
+          name="checkedA"
+          inputProps={{ 'aria-label': 'secondary checkbox' }}
+        />
+        <span className={this.renderClassCheckCondition(this.state.Diabetes)}>Yes</span>
       </div>
     )
 
     var elmGroupRespiratory: any = (
       <div className="switch-condition">
         <span className={this.renderClassUnCheckCondition(this.state.Respiratory)}>No</span> <Switch
-              checked={this.state.Respiratory}
-              onChange={() => this.handleChangeSwitchRespiratory(this.state.Respiratory)}
-              name="checkedA"
-              inputProps={{ 'aria-label': 'secondary checkbox' }}
-            />  
-            <span className={this.renderClassCheckCondition(this.state.Respiratory)}>Yes</span>
+          checked={this.state.Respiratory}
+          onChange={() => this.handleChangeSwitchRespiratory(this.state.Respiratory)}
+          name="checkedA"
+          inputProps={{ 'aria-label': 'secondary checkbox' }}
+        />
+        <span className={this.renderClassCheckCondition(this.state.Respiratory)}>Yes</span>
       </div>
     )
 
     var elmGroupHypertension: any = (
       <div className="switch-condition">
-         <span className={this.renderClassUnCheckCondition(this.state.Hypertension)}>No</span> <Switch
-              checked={this.state.Hypertension}
-              onChange={() => this.handleChangeSwitchHypertension(this.state.Hypertension)}
-              name="checkedA"
-              inputProps={{ 'aria-label': 'secondary checkbox' }}
-            />
-            <span className={this.renderClassCheckCondition(this.state.Hypertension)}>Yes</span>
+        <span className={this.renderClassUnCheckCondition(this.state.Hypertension)}>No</span> <Switch
+          checked={this.state.Hypertension}
+          onChange={() => this.handleChangeSwitchHypertension(this.state.Hypertension)}
+          name="checkedA"
+          inputProps={{ 'aria-label': 'secondary checkbox' }}
+        />
+        <span className={this.renderClassCheckCondition(this.state.Hypertension)}>Yes</span>
       </div>
     )
 
-    var elmGroupCancer: any =(
-      <div className="switch-condition">
+    var elmGroupCancer: any = (
+      <span className="switch-condition">
         <span className={this.renderClassUnCheckCondition(this.state.Cancer)}>No</span> <Switch
-              checked={this.state.Cancer}
-              onChange={() => this.handleChangeSwitchCancer(this.state.Cancer)}
-              name="checkedA"
-              inputProps={{ 'aria-label': 'secondary checkbox' }}
-            /> 
-            <span className={this.renderClassCheckCondition(this.state.Cancer)}>Yes</span>
-      </div>
+          checked={this.state.Cancer}
+          onChange={() => this.handleChangeSwitchCancer(this.state.Cancer)}
+          name="checkedA"
+          inputProps={{ 'aria-label': 'secondary checkbox' }}
+        />
+        <span className={this.renderClassCheckCondition(this.state.Cancer)}>Yes</span>
+      </span>
     )
 
     function formatOptionLabel() {
@@ -1072,7 +1071,7 @@ class FormCalculatorRate extends Component<iProps, IState> {
                     </FormControl> */}
 
                     <Select
-                      className="select-country" 
+                      className="select-country"
                       defaultValue={Countries[0]}
                       options={Countries}
                       onChange={this.handleChange}
@@ -1085,7 +1084,7 @@ class FormCalculatorRate extends Component<iProps, IState> {
               <div className="col-12 group-survey">
                 <div>
                   <div className="col-12 lbl-tile-group">
-                    <p className="age"><FontAwesomeIcon icon={faUserFriends} size="2x"/> Group Age?</p>
+                    <p className="age"><FontAwesomeIcon icon={faUserFriends} size="2x" /> Group Age?</p>
                   </div>
                   <div className="content-survey-group">
                     {elmGroupAge}
@@ -1151,7 +1150,7 @@ class FormCalculatorRate extends Component<iProps, IState> {
               <div className="col-12 group-survey">
                 <div>
                   <div className="col-12 lbl-tile-group">
-                    <p><FontAwesomeIcon icon={faAllergies} size="2x" /> Cancer?</p>
+                    <p><FontAwesomeIcon icon={faAllergies} size="2x" /> Cancer? </p>
                   </div>
                   <div className="content-survey-group">
                     {elmGroupCancer}
@@ -1160,13 +1159,17 @@ class FormCalculatorRate extends Component<iProps, IState> {
               </div>
 
               <div className="box-btn-check">
-                <button
+                {/* <button
                   type="submit"
                   className="btn btn-primary btn-check-cal"
                   onClick={this.onClick}
                 >
                   Check
-                    </button>
+                    </button> */}
+                <Button type="submit" variant="contained" color="primary" size="large" className="btn btn-primary btn-check-cal btn-check-cal"
+                  onClick={this.onClick} disableElevation>
+                  CHECK
+                </Button>
               </div>
             </div>
           </form>

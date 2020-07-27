@@ -25,7 +25,7 @@ class OptionState extends Component {
                     <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                         
                         <div className="row main-option-table">
-                        <NavLink exact to="/">
+                        <NavLink exact to="/dashboard">
                             <div className="col-xs-3 col-sm-3 col-md-6 col-lg-6 itemOption">
                                 <p className="titleCountry">
                                     <FontAwesomeIcon icon={faGlobe} /> World
@@ -136,7 +136,7 @@ class OptionState extends Component {
                     </div>
                     <Switch>
                         <div className="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                            <Route exact path="/" component={Stats} />
+                            <Route exact path="/dashboard" component={Stats} />
                             <Route path="/Asia" exact component={Asia} />
                             <Route exact path="/Europe" component={Europe} />
                             <Route path="/Africa" exact component={Africa} />

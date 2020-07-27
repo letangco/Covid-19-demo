@@ -141,9 +141,9 @@ class ResultConditionPie extends Component<IProps, IState> {
             
             labels: ['Group Age', 'Group Sex','Cardiovascular','Diabetes','Respiratory','Hypertension', 'Cancer'],
             fill: {
-              colors: ['#e63900', '#33cc33', '#ff9900']
+              colors: ['#005ce6','#00cc00','#ff9900','#8800cc','#00ffff','#e63900', '#ffff00']
             },
-            colors: ["#e63900", "#33cc33", "#ff9900"],
+            colors: ['#005ce6',"#00cc00",'#ff9900','#8800cc','#00ffff',"#e63900", "#ffff00"],
             
              theme: {
               mode: 'light',

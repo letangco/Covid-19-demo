@@ -25,13 +25,13 @@ class RiskDisease extends Component<any, any> {
             offsetX: -6,
             style: {
               fontSize: '12px',
-              colors: ['#fff']
+              colors: ['black']
             }
           },
           stroke: {
             show: true,
             width: 1,
-            colors: ['#fff']
+            colors: ['#fff','black','red','yellow']
           },
           xaxis: {
             categories: ['Tuberculosis', 'COVID-19(#Coronavirus)', 'Hepatitis B', 'Pneumonia', 'HIV/AIDS', 'Malaria','Shigellosis','Rotavirus','Seasonal Flu','Swine Flu H1N1 2009','Norovirus','Whooping Cough'

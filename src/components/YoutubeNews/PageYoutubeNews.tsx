@@ -17,7 +17,8 @@ class PageYoutubeNews extends React.Component {
             params: {
                 part: 'snippet',
                 maxResults: 3,
-                key: 'AIzaSyBqqdiP7gxBFVf69_gmlJKlKv2RtBTCV1A',
+                // key: 'AIzaSyBqqdiP7gxBFVf69_gmlJKlKv2RtBTCV1A',
+                key:'AIzaSyB0HSHarXU2fpDlotRLsX3XxfbTumEFtLE',
                 q: "covid"
             }
         })
@@ -30,7 +31,8 @@ class PageYoutubeNews extends React.Component {
             params: {
                 part: 'snippet',
                 maxResults: 3,
-                key: 'AIzaSyBqqdiP7gxBFVf69_gmlJKlKv2RtBTCV1A',
+                // key: 'AIzaSyBqqdiP7gxBFVf69_gmlJKlKv2RtBTCV1A',
+                key:'AIzaSyB0HSHarXU2fpDlotRLsX3XxfbTumEFtLE',
                 q: termFromSearchBar
             }
         })

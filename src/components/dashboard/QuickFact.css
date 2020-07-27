@@ -146,17 +146,20 @@
     border: 0;
     height: 1.5em;
     padding: 0px;
-    margin: 0px;
+    margin-bottom: 30px;
     font-family: "Book Antiqua", Verdana, Serif, Tahoma, Arial;
   }
   .title-quick-fact span {
     font-family: "Lato", Arial, Helvetica;
-    font-size: 2.6em;
+    font-size: 2em;
     box-sizing: border-box;
     width: auto;
     line-height: 5px;
     margin-left: 50px;
 }
+  .value-totalConfirmed,.value-newConfirmed,.value-total-DeathsCase,.value-total-new-DeathsCase,.value-total-RecoveredCases,.value-total-active-cases{
+    font-size: 40px;
+  }
 }
  @media only screen and (min-width: 735px) and (max-width: 750px) {
   .hr-text {

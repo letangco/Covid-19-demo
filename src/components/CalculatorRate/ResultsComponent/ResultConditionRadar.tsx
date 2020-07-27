@@ -111,9 +111,7 @@ class ResultConditionRadar extends Component<IProps, IState> {
       }
     }
     const options:any = {
-      width: 380,
       chart: {
-        height: 400,
         type: 'radar',
       },
       series: [{
@@ -121,18 +119,18 @@ class ResultConditionRadar extends Component<IProps, IState> {
       }],
       plotOptions: {
         radar: {
-          size: 140,
+          size: 150,
           polygons: {
-            strokeColor: '#e8e8e8',
+            strokeColor: '#ff9966',
             fill: {
-                colors: ['#f8f8f8', '#fff']
+                colors: ['#d9d9d9', '#b3fff0']
             }
           }
         }
       },
       fill: {
-        opacity: 0.5,
-        colors: ['red','green']
+        opacity: 0.8,
+        colors: ['#ff9966']
       },
       stroke: {
         show: true,
@@ -146,11 +144,20 @@ class ResultConditionRadar extends Component<IProps, IState> {
           size: 10
         }
       },
-      // title: {
-      //   text: 'Basic Radar Chart'
-      // },
+      title: {
+        text: 'Mortality of Conditions'
+      },
       xaxis: {
-        categories: ['Group Age', 'Group Sex','Cardiovascular','Diabetes','Respiratory','Hypertension', 'Cancer']
+        categories: ['Group Age', 'Group Sex','Cardiovascular','Diabetes','Respiratory','Hypertension', 'Cancer'],
+        labels: {
+          show: true,
+          style: {
+            colors: ['#005ce6',"#00cc00",'#ff9900','#8800cc','#00ffff',"#e63900", "#b3b300"],
+            fontSize: "11px",
+            fontFamily: 'Arial',
+            fontWeight: "bold"
+          }
+        }
       },
       yaxis:{
         min: 0,
@@ -165,12 +172,6 @@ class ResultConditionRadar extends Component<IProps, IState> {
           plotOptions: {
             radar: {
               size: 110,
-              polygons: {
-                strokeColor: '#e8e8e8',
-                fill: {
-                    colors: ['#f8f8f8', '#fff']
-                }
-              }
             }
           },
         }
@@ -185,7 +186,7 @@ class ResultConditionRadar extends Component<IProps, IState> {
           options={options}
           series={options.series}
           type="radar"
-          height='330px'
+          height='360px'
         />
       </>
     );

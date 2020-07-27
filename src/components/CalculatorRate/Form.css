@@ -165,3 +165,7 @@
 .unCheckCondition{
     background-color: white;
 }
+.btn-check-cal{
+    height: 60px;
+    font-size: 25px;
+}
